@@ -75,6 +75,7 @@ plugins=(
 	docker
 	brew
   docker-compose
+	tmux
 	)
 
 source $ZSH/oh-my-zsh.sh
