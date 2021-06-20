@@ -74,6 +74,7 @@ plugins=(
 	git
 	docker
 	brew
+  docker-compose
 	)
 
 source $ZSH/oh-my-zsh.sh
