@@ -1,149 +1,126 @@
-tap "bramstein/webfonttools"
-tap "dart-lang/dart"
+tap "drud/ddev"
 tap "eugenmayer/dockersync"
-tap "go-task/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mutagen-io/mutagen"
-tap "romkatv/powerlevel10k"
-tap "sass/sass"
+# Search tool like grep, but optimized for programmers
 brew "ack"
-brew "aircrack-ng"
+# Shell plugin manager
 brew "antibody"
-brew "bash"
-brew "bash-completion@2"
+# Automatic configure script builder
+brew "autoconf"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-brew "bench"
-brew "binutils"
-brew "xz"
-brew "python@3.9"
-brew "glib"
-brew "gmp"
-brew "gobject-introspection"
-brew "harfbuzz"
-brew "libraqm"
-brew "numpy"
-brew "p7zip"
-brew "pillow"
-brew "binwalk"
-brew "cifer"
-brew "libtool"
-brew "freetds"
-brew "php", link: false
-brew "composer"
-brew "coreutils"
-brew "cowsay"
+# Command-line interface for SQLite
+brew "sqlite"
+# Backup tool
+brew "bup"
+# Top-like interface for container metrics
 brew "ctop"
-brew "dex2jar"
-brew "dns2tcp"
-brew "fcrackzip"
-brew "fd"
-brew "findutils"
-brew "fish"
-brew "foremost"
-brew "fortune"
-brew "fzf"
-brew "gdk-pixbuf"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Libraries to talk to Microsoft SQL Server and Sybase databases
+brew "freetds"
+# Distributed revision control system
 brew "git"
-brew "git-flow"
-brew "git-lfs"
-brew "python@3.10"
-brew "glances"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Core application library for C
+brew "glib"
+# GNU Ubiquitous Intelligent Language for Extensions
 brew "guile"
+# Low-level cryptographic library
+brew "nettle"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
 brew "gnutls"
-brew "gnupg"
-brew "netpbm"
-brew "python@3.8"
-brew "pango"
-brew "librsvg"
-brew "graphviz"
-brew "grep"
-brew "hashpump"
-brew "lua"
-brew "highlight"
+# Improved top (interactive process viewer)
 brew "htop"
-brew "libfido2"
-brew "libssh"
-brew "hydra"
-brew "libheif"
-brew "imagemagick"
-brew "john"
-brew "knock"
-brew "ldns"
-brew "libdnet"
-brew "libproxy"
-brew "lynx"
-brew "moreutils"
-brew "neofetch"
+# Apache HTTP server
+brew "httpd"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Rainbows and unicorns in your console!
+brew "lolcat"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# HTTP/2 C Library
 brew "nghttp2"
-brew "nmap"
+# Platform built on V8 to build network applications
 brew "node"
-brew "nvm"
-brew "openjdk@11"
-brew "openssh"
-brew "peco"
-brew "php-cs-fixer"
-brew "pigz"
-brew "pngcheck"
-brew "pv"
-brew "qt"
-brew "rename"
-brew "rlwrap"
-brew "ruby"
-brew "screen"
-brew "shellcheck"
-brew "shfmt"
-brew "socat"
-brew "sqlmap"
-brew "ssh-copy-id", link: true
+# Libraries for security-enabled client and server applications
+brew "nss"
+# General-purpose scripting language
+brew "php", restart_service: true
+# General-purpose scripting language
+brew "php@7.4", restart_service: true
+# Sparklines for the shell
+brew "spark"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Feature-rich console based todo list manager
 brew "task"
-brew "taskd"
-brew "tasksh"
-brew "taskwarrior-tui"
-brew "tcpflow"
-brew "tcpreplay"
-brew "tcptrace"
+# Tool Command Language
+brew "tcl-tk"
+# Code-search similar to ack
 brew "the_silver_searcher"
-brew "tig"
+# Command-line time tracking application
 brew "timewarrior"
+# Simplified and community-driven man pages
 brew "tldr"
+# Terminal multiplexer
 brew "tmux"
-brew "todo-txt"
-brew "tree"
-brew "ucspi-tcp"
+# Lightweight BitTorrent client
+brew "transmission-cli"
+# File synchronization tool for OSX
 brew "unison"
-brew "vbindiff"
+# Vi 'workalike' with many additional features
+brew "vim"
+# Internet file retriever
 brew "wget"
-brew "woff2"
-brew "xpdf"
-brew "youtube-dl"
-brew "zopfli"
-brew "zsh"
-brew "zsh-history-substring-search"
-brew "zsh-syntax-highlighting"
-brew "bramstein/webfonttools/sfnt2woff"
-brew "bramstein/webfonttools/sfnt2woff-zopfli"
-brew "go-task/tap/go-task", link: false
-brew "mutagen-io/mutagen/mutagen", link: false
-brew "romkatv/powerlevel10k/powerlevel10k", link: false
-brew "sass/sass/sass", link: false
-cask "breaktimer"
+# Local web development system
+brew "drud/ddev/ddev"
+# A layer for unison-fsmonitor arround either macfsevents or watchdog for usage with unison
+brew "eugenmayer/dockersync/unox"
+# Fast file synchronization and network forwarding for remote development
+brew "mutagen-io/mutagen/mutagen"
+# Application launcher and productivity software
+cask "alfred"
+# Application uninstaller
+cask "appcleaner"
+# Web browser focusing on privacy
+cask "brave-browser"
+# Offline toolbox for developers
 cask "devutils"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerized applications and microservices
 cask "docker"
-cask "font-consolas-for-powerline"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 cask "font-fira-code"
-cask "font-hack-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+# HTTP and GraphQL Client
 cask "insomnia"
+# Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-cask "java"
-cask "macvim"
-cask "mark-text"
-cask "meld"
+# Calculator and converter application
 cask "numi"
-cask "onyx"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Text editor for code, markup and prose
 cask "sublime-text"
-cask "taskwarrior-pomodoro"
+# Open-source BitTorrent client
+cask "transmission"
+# Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
