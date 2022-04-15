@@ -9,13 +9,14 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -76,7 +77,10 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-plugins=(alias-finder brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git jira jsontools node npm npx osx urltools vi-mode vscode web-search tmux z chucknorris)
+
+# plugins=(alias-finder brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git jira jsontools node npm npx osx urltools vi-mode vscode web-search tmux z chucknorris)
+
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,26 +111,24 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
-
-
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --color=always'"
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-export PATH="/usr/local/opt/libpq/bin:$PATH"
 
-export PATH="$HOME/.composer/vendor/bin:$PATH"
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-alias t='task list'
-export PATH="/usr/local/sbin:$PATH"
+# export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --color=always'"
+
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+# export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+# export PATH="/usr/local/opt/libpq/bin:$PATH"
+
+# export PATH="$HOME/.composer/vendor/bin:$PATH"
+# export PATH="/usr/local/opt/sqlite/bin:$PATH"
+# export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
+
+# export PATH="/usr/local/sbin:$PATH"
