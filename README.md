@@ -67,7 +67,13 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ```
 
+To load the plugins, using this command inside vim:
 
+```zsh
+
+:PlugInstall
+
+```
 
 ## TODO List
 
