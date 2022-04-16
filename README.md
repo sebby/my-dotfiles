@@ -54,6 +54,18 @@ brew bundle --file ~/.dotfiles/Brewfile
 cd ~/.dotfiles && brew bundle
 ```
 
+5. Install Plug for VIM
+https://github.com/junegunn/vim-plug
+
+```zsh
+
+# Install Plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+```
+
+
 
 ## TODO List
 
