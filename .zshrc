@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # plugins=(alias-finder brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git jira jsontools node npm npx osx urltools vi-mode vscode web-search tmux z chucknorris)
 
-plugins=(git)
+plugins=(alias-finder  common-aliases copypath copyfile docker docker-compose git brew macos vscode node npm)
 
 source $ZSH/oh-my-zsh.sh
 
