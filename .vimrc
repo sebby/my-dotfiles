@@ -2,6 +2,12 @@
 
 set wrap
 
+" Wrap comments at 80
+set textwidth=80
+" Show line and column number
+set ruler
+
+
 set encoding=utf-8
 
 " Show the numbers
@@ -12,6 +18,8 @@ syntax on
 filetype indent plugin on
 
 
+" Show last command in status line
+set showcmd
 
 
 if filereadable(expand("~/.vimrc.plug"))
