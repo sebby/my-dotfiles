@@ -1,7 +1,12 @@
+
 set number
+set relativenumber
 
+syntax on
+filetype indent plugin on
 
-# Reload .vimrc and :PlugInstall to install plugins.
 call plug#begin()
-Plug 'tpope/vim-sensible'
+  Plug 'junegunn/vim-easy-align'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
 call plug#end()
