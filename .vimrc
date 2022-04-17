@@ -16,6 +16,7 @@ set relativenumber
 
 syntax on
 filetype indent plugin on
+set autoindent
 
 
 " Show last command in status line

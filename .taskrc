@@ -32,3 +32,5 @@ data.location=~/Documents/taskwarrior/.task
 
 
 # @todo: ajouter mes contextes du boulot.
+context.veille.read=project:phpunit or +veille
+context.veille.write=project:phpunit or +veille
