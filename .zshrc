@@ -117,10 +117,10 @@ source $ZSH/oh-my-zsh.sh
 
 
 
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# export PATH="/usr/local/opt/gettext/bin:$PATH"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-# export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --color=always'"
+export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --color=always'"
 
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
