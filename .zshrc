@@ -80,7 +80,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # plugins=(alias-finder brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git jira jsontools node npm npx osx urltools vi-mode vscode web-search tmux z chucknorris)
 
-plugins=(alias-finder  common-aliases copypath copyfile docker docker-compose git brew macos vscode node npm)
+plugins=(alias-finder common-aliases copypath copyfile docker docker-compose git brew macos vscode node npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -132,3 +132,6 @@ export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --co
 # export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 
 # export PATH="/usr/local/sbin:$PATH"
+
+alias ll='exa --long --header --icons --git'
+alias tree='exa --tree --icons -L=2'

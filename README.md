@@ -53,6 +53,9 @@ ln -s ~/.dotfiles/.taskrc ~/.taskrc
 # Then pass in the Brewfile location...
 brew bundle --file ~/.dotfiles/Brewfile
 
+# Generate a Brewfile
+brew bundle dump --file ~/.dotfiles/Brewfile --force --describe
+
 # ...or move to the directory first.
 cd ~/.dotfiles && brew bundle
 ```
