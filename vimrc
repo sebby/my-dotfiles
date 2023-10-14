@@ -1,4 +1,3 @@
-"Mon setup simple minimalist de vim, je parle de neovim
 "
 " 0. Création d'un fichier vimrc dans le dossier .vim
 "
@@ -12,10 +11,6 @@
 "
 " LINKS
 " - https://medium.com/@devsjc/from-jetbrains-to-vim-a-modern-vim-configuration-and-plugin-set-d58472a7d53d
-"   - 
-"
-"
-"
 "
 "=== VIM SETTINGS ==================================="
 
@@ -31,16 +26,15 @@ set encoding=UTF-8
 set noswapfile
 
 if $COLORTERM == 'truecolor'
-  set termguicolors
+	set termguicolors
 endif
 
 let mapleader="\<space>"
 nnoremap <leader>c :botright term<CR>
 
 
-
 if &compatible
-  set nocompatible
+	set nocompatible
 endif
 
 function! s:packager_init(packager) abort
@@ -58,6 +52,7 @@ call packager#setup(function('s:packager_init'))
 
 "COLOR SCHEME
 colorscheme sonokai
+
 
 "FZF
 "Elsewhere in the vimrc"
@@ -80,3 +75,5 @@ highlight! link MistflyInsert WildMenu
 highlight! link MistflyVisual IncSearch
 highlight! link MistflyCommand WildMenu
 highlight! link MistflyReplace ErrorMsg
+" Vimscript initialization file
+let g:mistflyWithIndentStatus = v:true
