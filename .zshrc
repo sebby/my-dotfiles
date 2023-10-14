@@ -78,9 +78,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 
 
-# plugins=(alias-finder brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git jira jsontools node npm npx osx urltools vi-mode vscode web-search tmux z chucknorris)
+# plugins=(alias-finder brew common-aliases copydir copyfile docker docker-compose dotenv encode64 extract git node npm npx osx urltools vi-mode web-search tmux z chucknorris)
 
-plugins=(alias-finder common-aliases copypath copyfile docker docker-compose git brew macos vscode node npm)
+plugins=(alias-finder copypath copyfile docker docker-compose git brew macos node npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,7 +120,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --color=always'"
+# export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --color=always'"
 
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
@@ -133,5 +133,6 @@ export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --preview 'bat {-1} --co
 
 # export PATH="/usr/local/sbin:$PATH"
 
-alias ll='exa --long --header --icons --git'
+alias ll='exa --all --long --header --icons --git'
 alias tree='exa --tree --icons -L=2'
+# alias  v='fd --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
