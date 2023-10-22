@@ -1,0 +1,8 @@
+import:
+  # - ~/.config/alacritty/my-themes/themes/tender.yaml
+  - ~/.config/alacritty/my-themes/themes/ubuntu.yaml
+  # - ~/.config/alacritty/my-themes/themes/iterm.yaml
+  # - ~/.config/alacritty/my-themes/themes/tokyo-night.yaml
+  # - ~/.config/alacritty/my-themes/themes/tokyo-night-storm.yaml
+  # - ~/.config/alacritty/my-themes/themes/dracula.yaml
+
