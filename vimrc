@@ -20,17 +20,17 @@ source $VIMRUNTIME/defaults.vim
 syntax enable
 filetype plugin indent on
 set hlsearch incsearch ignorecase
-set number 
+set number
 set relativenumber
 set encoding=UTF-8
 set noswapfile
 
 if $COLORTERM == 'truecolor'
-	set termguicolors
+	"set termguicolors
 endif
 
-let mapleader="\<space>"
-nnoremap <leader>c :botright term<CR>
+let mapleader=" "
+"nnoremap <leader>c :botright term<CR>
 
 
 if &compatible
@@ -38,11 +38,11 @@ if &compatible
 endif
 
 function! s:packager_init(packager) abort
-	call a:packager.add('sainnhe/sonokai')
+	"call a:packager.add('sainnhe/sonokai')
 	call a:packager.add('junegunn/fzf', { 'do': './install --all && ln -s $(pwd) ~/.fzf'})
 	call a:packager.add('junegunn/fzf.vim')
 	call a:packager.add("airblade/vim-gitgutter")
-	call a:packager.add('bluz71/vim-mistfly-statusline') 
+	call a:packager.add('bluz71/vim-mistfly-statusline')
 	call a:packager.add('ryanoasis/vim-devicons')
 endfunction
 
@@ -51,7 +51,7 @@ call packager#setup(function('s:packager_init'))
 
 
 "COLOR SCHEME
-colorscheme sonokai
+"colorscheme sonokai
 
 
 "FZF
