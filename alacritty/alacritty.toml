@@ -1,0 +1,6 @@
+import = ["/home/sebastien-cunin/.config/alacritty/colors.toml", "/home/sebastien-cunin/.config/alacritty/window.toml", "/home/sebastien-cunin/.config/alacritty/fonts.toml", "/home/sebastien-cunin/.config/alacritty/mouse.toml"]
+live_config_reload = true
+
+[env]
+TERM = "screen-256color"
+startup_mode = "Windowed"
