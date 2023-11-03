@@ -2,5 +2,5 @@ import = ["/home/sebastien-cunin/.config/alacritty/colors.toml", "/home/sebastie
 live_config_reload = true
 
 [env]
-TERM = "screen-256color"
+TERM = "xterm-256color"
 startup_mode = "Windowed"

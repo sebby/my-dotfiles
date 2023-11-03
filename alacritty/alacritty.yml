@@ -512,7 +512,9 @@ live_config_reload: true
 #       Start searching toward the left of the search origin.
 #   - Copy
 #   - Paste
-#   - IncreaseFontSize
+#   - IncreaseFont
+
+
 #   - DecreaseFontSize
 #   - ResetFontSize
 #   - ScrollPageUp
