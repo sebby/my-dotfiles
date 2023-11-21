@@ -11,7 +11,7 @@
 import:
   - ~/.config/alacritty/colors.yml
   - ~/.config/alacritty/window.yml
-  - ~/.config/alacritty/fonts.yml
+    #  - ~/.config/alacritty/fonts.yml
   - ~/.config/alacritty/mouse.yml
 
 # Any items in the `env` entry below will be added as
