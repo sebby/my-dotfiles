@@ -2,13 +2,13 @@
 size = 14.0
 
 [font.bold]
-family = "Ubuntu Mono"
+family = "Source Code Pro"
 style = "Bold"
 
 [font.italic]
-family = "Ubuntu Mono"
+family = "Source Code Pro"
 style = "Italic"
 
 [font.normal]
-family = "Ubuntu Mono"
+family = "Source Code Pro"
 style = "Regular"
