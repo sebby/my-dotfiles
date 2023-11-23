@@ -6,6 +6,6 @@ import:
   # - ~/.config/alacritty/my-themes/themes/tokyo-night-storm.yaml
   # - ~/.config/alacritty/my-themes/themes/dracula.yaml
   - ~/.config/alacritty/my-themes/themes/rose-pine-moon.yaml
-  - ~/.config/alacritty/my-themes/themes/rose-pine.yaml
-  # - ~/.config/alacritty/my-themes/themes/rose-pine-dawn.yaml
+  # - ~/.config/alacritty/my-themes/themes/rose-pine.yaml
+  #- ~/.config/alacritty/my-themes/themes/rose-pine-dawn.yaml
 
