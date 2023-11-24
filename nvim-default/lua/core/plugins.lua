@@ -40,16 +40,6 @@ return require('packer').startup(function(use)
     end
   }
 
-  use {
-    'nvimdev/dashboard-nvim',
-    event = 'VimEnter',
-    config = function()
-      require('dashboard').setup {
-        -- config
-      }
-    end,
-    requires = {'nvim-tree/nvim-web-devicons'}
-  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
