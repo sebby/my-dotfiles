@@ -16,7 +16,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -133,7 +133,7 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 alias ll='exa --all --long --header --icons --git'
 alias tree='exa --tree --icons -L=2'
-# alias  v='fd --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
+alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
 
 alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
 alias nvim-kick="NVIM_APPNAME=kickstart nvim"

@@ -15,8 +15,8 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 vim.cmd [[ set noswapfile ]]
+vim.cmd [[ set termguicolors ]]
 
 --Line numbers
 vim.wo.number = true
-
 vim.wo.relativenumber = true
