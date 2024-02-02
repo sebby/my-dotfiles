@@ -4,3 +4,8 @@ Actions
 - [ ] Le Brewline le plus à jour possible.
 - [x] Installer PLug
 - [x] Installer VIM Airline
+
+
+## NVIM
+
+- [ ] avoir le repo nvim dans le repo dotfiles. 
