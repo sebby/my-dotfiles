@@ -1,7 +1,7 @@
 font:
   # Normal (roman) font face
   normal:
-    family : Hack Nerd Font Mono
+    family : "monospace"
     style: Regular
 
   # Bold font face
@@ -10,7 +10,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family : Hack Nerd Font Mono
+    family : "monospace"
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -21,7 +21,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family : Hack Nerd Font Mono
+    family : "monospace"
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -32,21 +32,21 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family : Hack Nerd Font Mono
+    family : "monospace"
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
   # Point size
-  glyph_offset:
-    x: 0
-    y: 5
 
-  size: 12.0
+  size: 16.0
 
+    #size: 14.00
   offset:
-    x: 0
-    y: 5
+    y: 10
+  glyph_offset:
+    y: 10
+
 
 
   debug:
