@@ -25,7 +25,9 @@ ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" )
 
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#00ffff,bold,underline'
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#cfb7e8,underline'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#bababa,bold'
+
+# On peut essayer le gris clair #bababa
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
