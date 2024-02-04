@@ -153,3 +153,9 @@ fi
 
 eval "$(starship init zsh)"
 
+
+if [ -f ~/.aliases_work ]; then
+	source ~/.aliases_work
+else    
+	print "404: ~/.alias_work not found."
+fi
