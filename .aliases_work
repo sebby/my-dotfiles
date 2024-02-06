@@ -1,3 +1,39 @@
+# Add wisely, as too many plugins slow down shell startup.
+# plugins=(
+#   git
+#   docker-compose 
+#   docker 
+#   emoji 
+#   zsh-autosuggestions
+#   zsh-syntax-highlighting
+# )
 
-# Poser les alias actency
-# poser les alias ORANGE.
+#
+# Example aliases
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+#
+
+
+
+# Des modules contrib Orange 20230526
+alias orange_webform="cd $HOME/web/BoSE/drupal/drupal-docker/drupal-src/web/modules/contrib-orange/orange_webform"
+alias tu_exercices="cd $HOME/web/BoSE/drupal/drupal-docker/drupal-src/web/modules/contrib-orange/tu_exercices/"
+alias orange_OB1="cd $HOME/web/BoSE/drupal/drupal-docker/drupal-src/web/modules/contrib-orange/orange_ob1_components"
+alias orange_OSE="cd $HOME/web/BoSE/drupal/drupal-docker/drupal-src/web"
+alias contrib-orange="cd $HOME/web/BoSE/drupal/drupal-docker/drupal-src/web/modules/contrib-orange && ll"
+alias contrib_orange="contrib-orange"
+alias orange_xdebug="cd $HOME/xdebugbose"
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+#alias ctop='ctop -i'
+alias bose='cd ~/web/BoSE/drupal/drupal-docker/drupal-src'
+alias bosesite='cd ~/web/BoSE/drupal/drupal-docker/drupal-src/core-model/sites/boutiquepro.orange.fr/ '
+alias cp='cp -i'
+alias dockerakeneo='docker exec -ti bose_akeneo bash'
+alias dockerdrupal='docker exec -ti -u www-data bose_drupal bash'
+alias drupaldocker='docker exec -ti -u www-data bose_drupal bash'
+alias dockerdrupal_log='docker logs bose_syslog | grep '\''"application": "drupal"'\'''
+alias env_dev="cd $HOME/web/BoSE/env-dev/deploy_dev_env" 
+alias h="history"  
+
