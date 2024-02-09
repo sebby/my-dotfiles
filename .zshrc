@@ -165,6 +165,7 @@ else
 	print "404: ~/.alias_work not found."
 fi
 
+source "$HOME/.cargo/env"
 
 
 
