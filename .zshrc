@@ -120,8 +120,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ll='exa --all --long --header --icons '
-alias tree='exa --tree -L=2 --icons'
 
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
@@ -135,14 +133,21 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # export PATH="/usr/local/sbin:$PATH"
 
+
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+
 alias ll='eza --all --long --header --icons --git'
 alias tree='eza --tree --icons -L=2'
 alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
 export PAGER=most
+export MANPAGER=most
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 
 alias sandbox-drupal="cd ~/Projects/labs/php/sandbox-drupal"
+
+alias vim="nvim"
 
 
 
@@ -151,7 +156,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-eval "$(starship init zsh)"
+
 
 
 if [ -f ~/.aliases_work ]; then
@@ -181,3 +186,4 @@ else
 fi
 
 
+eval "$(starship init zsh)"
