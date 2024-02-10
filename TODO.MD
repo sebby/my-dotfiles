@@ -6,6 +6,7 @@
 - [x] Installer VIM Airline
 - [ ] Surchargé la configuration de neovim
 
+- [ ] Supprimer le README, car il parle de l'ancien façon de faire un dotfiles repo.
 
 
 
