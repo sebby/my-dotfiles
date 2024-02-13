@@ -1,0 +1,4 @@
+
+
+
+docker run --rm -v "${PWD}":/opt tonsky/firacode:latest ./script/build.sh -f "cv32,zero,ss08,cv14,onum,ss04,ss05,ss03,cv31,cv29,cv30,ss10,cv19,cv23,cv21,cv22,ss10,cv16"
