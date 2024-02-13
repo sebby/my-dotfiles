@@ -3,8 +3,6 @@
 ## Todo
 - [ ] Activwer
 
-
-
 Pour ajouter un nouveau lien synbolique
 le flag -n permet de simuler la command
 ``` bash
