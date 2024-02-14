@@ -15,5 +15,10 @@
 - [x] Avoir le repo nvim dans le repo dotfiles, cela fait avec une utilisation de stow (Pour je reprends kickstart) 
 (10/02/2024)
 
+
+## Tmux
+- [ ] Voir le fichier tmux/.tmux.conf
+- [ ] Lire le readme de TPM (tmux plugin manager), https://github.com/tmux-plugins/tpm
+
 ## Script SHELL
 https://stackoverflow.com/questions/394230/how-to-detect-the-os-from-a-bash-script
