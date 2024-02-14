@@ -89,6 +89,7 @@ plugins=(
 	zsh-syntax-highlighting
 	docker
 	docker-compose
+	z
 )
 
 
@@ -99,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=fr_FR.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -188,3 +189,8 @@ fi
 
 
 eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+eval "$(zoxide init --cmd cd zsh)"
