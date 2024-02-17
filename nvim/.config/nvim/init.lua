@@ -43,7 +43,9 @@ P.S. You can delete this when you're done too. It's your config now :)
 --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+vim.o.scrolloff = 8
+--
+-- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
 -- Hello world
 
 
@@ -220,11 +222,13 @@ require('lazy').setup({
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
     -- See `:help lualine.txt`
     opts = {
       options = {
-        icons_enabled = false,
-        theme = 'auto',
+        icons_enabled = true,
+        theme = 'tokyonight',
+        -- theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
