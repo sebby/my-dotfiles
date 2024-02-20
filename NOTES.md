@@ -20,3 +20,5 @@ tmux source-file ~/.tmux.conf
 ## Color Schemes
 ### TokyoNight
 ### Catppuccin
+
+- https://github.com/catppuccin/kitty
