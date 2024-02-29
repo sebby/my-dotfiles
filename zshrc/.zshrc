@@ -148,7 +148,9 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 alias sandbox-drupal="cd ~/Projects/labs/php/sandbox-drupal"
 
-alias vim="nvim"
+# alias vim="nvim"
+alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+alias vim='NVIM_APPNAME="nvim-kickstart" nvim'
 
 
 
@@ -195,3 +197,7 @@ eval "$(starship init zsh)"
 eval "$(thefuck --alias)"
 
 eval "$(zoxide init --cmd cd zsh)"
+
+eval "$(thefuck --alias)"
+
+eval $(thefuck --alias)
