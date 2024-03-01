@@ -194,6 +194,7 @@ eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(thefuck --alias)"
 
 eval "$(zoxide init --cmd cd zsh)"
 
