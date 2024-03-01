@@ -3,10 +3,10 @@
 # ~/.config/starship.toml
 
 # A minimal left prompt
-format = """$character"""
+# format = """$character"""
 
 # move the rest of the prompt to the right
-right_format = """$all"""
+# right_format = """$all"""
 
 # https://starship.rs/advanced-config/#continuation-prompt
 continuation_prompt = '▶▶ '
