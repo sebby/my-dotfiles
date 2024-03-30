@@ -103,11 +103,11 @@ source $ZSH/oh-my-zsh.sh
 export LANG=fr_FR.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -150,8 +150,8 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 alias sandbox-drupal="cd ~/Projects/labs/php/sandbox-drupal"
 
 # alias vim="nvim"
-alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
-alias vim='NVIM_APPNAME="nvim-kickstart" nvim'
+# alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+alias vim='NVIM_APPNAME="kickstart" nvim'
 
 
 
