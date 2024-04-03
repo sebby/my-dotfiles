@@ -44,7 +44,8 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.o.scrolloff = 8
---
+
+
 -- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
 -- Hello world
 
@@ -74,7 +75,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
-  'fladson/vim-kitty',
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
@@ -228,8 +228,8 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'tokyonight',
-        -- theme = 'auto',
+        -- theme = 'tokyonight',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
@@ -335,6 +335,9 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])
 
 -- [[ Basic Keymaps ]]
 
