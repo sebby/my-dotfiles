@@ -137,12 +137,14 @@ require('lazy').setup({
     opts = {
       -- See `:help gitsigns.txt`
       signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
+        add          = { text = '┃' },
+        change       = { text = '┃' },
+        delete       = { text = '_' },
+        topdelete    = { text = '‾' },
         changedelete = { text = '~' },
+        untracked    = { text = '┆' },
       },
+      numhl = true,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
 
@@ -207,20 +209,6 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    lazy = false,
-    config = function()
-      require('onedark').setup {
-        -- Set a style preset. 'dark' is default.
-        style = 'warmer', -- dark, darker, cool, deep, warm, warmer, light
-      }
-      -- require('onedark').load()
-    end,
-  },
-
-  {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
@@ -228,7 +216,6 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        -- theme = 'tokyonight',
         theme = 'auto',
         component_separators = '|',
         section_separators = '',
@@ -339,7 +326,7 @@ vim.o.termguicolors = true
 vim.o.background = "dark"
 -- vim.cmd([[colorscheme gruvbox]])
 vim.cmd([[colorscheme gruvbuddy]])
--- vim.cmd([[colorscheme colorbuddy]])
+vim.cmd([[colorscheme colorbuddy]])
 
 
 
