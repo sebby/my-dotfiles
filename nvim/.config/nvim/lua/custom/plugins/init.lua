@@ -27,13 +27,18 @@ return {
 					keywords = { italic = true },
 					functions = {},
 					variables = {},
-					-- Background styles. Can be "dark", "transparent" or "normal"
-					sidebars = "dark", -- style for sidebars, see below
+					-- Background styles. Can be "dark", "transparent" or "normal"					sidebars = "dark", -- style for sidebars, see below
 					floats = "dark", -- style for floating windows
 				},
 			})
 			require('tokyonight').load()
 		end
 
+	},
+	{
+		"ellisonleao/gruvbox.nvim",
+		priority = 1000,
+		opts = {}
 	}
+
 }
