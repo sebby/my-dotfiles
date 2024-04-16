@@ -237,8 +237,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'tokyonight',
-        -- theme = 'auto',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
@@ -344,6 +343,8 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+vim.cmd 'colorscheme habamax'
 
 -- [[ Basic Keymaps ]]
 

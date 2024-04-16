@@ -3,6 +3,10 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+
+	-- TODO: ajouter le todo comments
+	-- TODO: supprimer le tokyonight
+	-- TODO: avoir le colorscheme habamax
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
