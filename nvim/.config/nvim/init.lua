@@ -220,6 +220,15 @@ require('lazy').setup({
     end,
   },
 
+  -- Lua
+  {
+    "folke/zen-mode.nvim",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  },
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
@@ -228,7 +237,6 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        -- theme = 'tokyonight',
         theme = 'auto',
         component_separators = '|',
         section_separators = '',
@@ -337,12 +345,9 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 vim.o.background = "dark"
--- vim.cmd([[colorscheme gruvbox]])
-vim.cmd([[colorscheme gruvbuddy]])
+vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme gruvbuddy]])
 -- vim.cmd([[colorscheme colorbuddy]])
-
-
-
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience

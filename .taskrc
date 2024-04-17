@@ -38,7 +38,7 @@ editor=nvim
 #include dark-gray-blue-256.theme
 #include solarized-dark-256.theme
 #include solarized-light-256.theme
-#include no-color.theme
+# include no-color.theme
 
 context.orange=+orange
 context.personnel.read=+game or +personnel

@@ -1,5 +1,4 @@
 
-
 # ~/.config/starship.toml
 
 # A minimal left prompt
@@ -13,3 +12,9 @@ continuation_prompt = '▶▶ '
 
 [battery]
 disabled=true
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green) '
+error_symbol = '[✗](bold red) '
+vimcmd_symbol = '[V](bold green) '
