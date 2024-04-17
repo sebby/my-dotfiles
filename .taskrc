@@ -41,3 +41,5 @@ editor=nvim
 # include no-color.theme
 
 context.orange=+orange
+context.personnel.read=+game or +personnel
+context=personnel
