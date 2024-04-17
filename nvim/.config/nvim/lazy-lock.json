@@ -7,7 +7,7 @@
   "colorbuddy.nvim": { "branch": "master", "commit": "9e96ccd88f4510d0a54ce1d5c11119eac9fb217e" },
   "fidget.nvim": { "branch": "main", "commit": "1ba38e4cbb24683973e00c2e36f53ae64da38ef5" },
   "friendly-snippets": { "branch": "main", "commit": "ea068f1becd91bcd4591fceb6420d4335e2e14d3" },
-  "gitsigns.nvim": { "branch": "main", "commit": "c02516144a4fbd777b6b060a068ab984ab5974d5" },
+  "gitsigns.nvim": { "branch": "main", "commit": "52f8da33cc0cadbf1164c4a91c8bfd6895533d67" },
   "gruvbox.nvim": { "branch": "main", "commit": "6e4027ae957cddf7b193adfaec4a8f9e03b4555f" },
   "indent-blankline.nvim": { "branch": "master", "commit": "3d08501caef2329aba5121b753e903904088f7e6" },
   "lazy.nvim": { "branch": "main", "commit": "31ddbea7c10b6920c9077b66c97951ca8682d5c8" },
