@@ -136,15 +136,15 @@ require('lazy').setup({
     'lewis6991/gitsigns.nvim',
     opts = {
       -- See `:help gitsigns.txt`
-      -- signs = {
-      --   add          = { text = '┃' },
-      --   change       = { text = '┃' },
-      --   delete       = { text = '_' },
-      --   topdelete    = { text = '‾' },
-      --   changedelete = { text = '~' },
-      --   untracked    = { text = '┆' },
-      -- },
-      -- signcolumn = true,
+      signs = {
+        add          = { text = '┃' },
+        change       = { text = '┃' },
+        delete       = { text = '_' },
+        topdelete    = { text = '‾' },
+        changedelete = { text = '~' },
+        untracked    = { text = '┆' },
+      },
+      signcolumn = false,
       numhl = true,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
