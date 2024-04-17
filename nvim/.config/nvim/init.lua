@@ -47,7 +47,7 @@ vim.o.scrolloff = 8
 
 
 -- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
-vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
 -- Hello world
 
 
