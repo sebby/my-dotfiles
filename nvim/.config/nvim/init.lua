@@ -47,6 +47,7 @@ vim.o.scrolloff = 8
 
 
 -- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
 -- Hello world
 
 
@@ -308,7 +309,7 @@ require('lazy').setup({
 -- NOTE: You can change these options as you wish!
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
