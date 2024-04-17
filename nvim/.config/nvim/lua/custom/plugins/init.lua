@@ -7,8 +7,8 @@ return {
 	-- TODO: ajouter le todo comments
 	-- TODO: supprimer le tokyonight
 	-- TODO: avoir le colorscheme habamax
-	{ "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
+	{ "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
 
-	{ "tjdevries/colorbuddy.nvim" }
-
+	{ "tjdevries/colorbuddy.nvim" },
+	{ "rose-pine/neovim",         name = "rose-pine" }
 }
