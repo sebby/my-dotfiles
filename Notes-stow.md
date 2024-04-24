@@ -3,12 +3,12 @@
 ## Todo
 - [ ] Activwer
 
-Pour ajouter un nouveau lien synbolique
-le flag -n permet de simuler la command
+Pour ajouter un nouveau lien symbolique:
+le flag -n permet de simuler la commande
 ``` bash
 stow -nvSt ~ folder (zsrhc)
 ```
-Pour supprimer le lien symbolique.
+Pour supprimer le lien symbolique:
 ``` bash
 stow -nvDt ~ folder (zsrhc)
 ```

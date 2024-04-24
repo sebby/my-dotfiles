@@ -44,8 +44,10 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.o.scrolloff = 8
---
+
+
 -- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
 -- Hello world
 
 
@@ -74,7 +76,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
-  'fladson/vim-kitty',
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
@@ -137,15 +138,17 @@ require('lazy').setup({
     opts = {
       -- See `:help gitsigns.txt`
       signs = {
-        add = { text = '+' },
-        change = { text = '~' },
-        delete = { text = '_' },
-        topdelete = { text = '‾' },
+        add          = { text = '┃' },
+        change       = { text = '┃' },
+        delete       = { text = '_' },
+        topdelete    = { text = '‾' },
         changedelete = { text = '~' },
+        untracked    = { text = '┆' },
       },
+      signcolumn = false,
+      numhl = true,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
-
         local function map(mode, l, r, opts)
           opts = opts or {}
           opts.buffer = bufnr
@@ -237,8 +240,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'tokyonight',
-        -- theme = 'auto',
+        theme = 'auto',
         component_separators = '|',
         section_separators = '',
       },
@@ -307,7 +309,7 @@ require('lazy').setup({
 -- NOTE: You can change these options as you wish!
 
 -- Set highlight on search
-vim.o.hlsearch = false
+vim.o.hlsearch = true
 
 -- Make line numbers default
 vim.wo.number = true
@@ -345,6 +347,10 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme gruvbuddy]])
+-- vim.cmd([[colorscheme colorbuddy]])
 -- [[ Basic Keymaps ]]
 
 -- Keymaps for better default experience
