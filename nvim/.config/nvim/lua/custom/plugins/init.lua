@@ -10,5 +10,7 @@ return {
 	{ "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
 
 	{ "tjdevries/colorbuddy.nvim" },
-	{ "rose-pine/neovim",         name = "rose-pine" }
+	{ "rose-pine/neovim",         name = "rose-pine" },
+	{ "rebelot/kanagawa.nvim" }
+
 }

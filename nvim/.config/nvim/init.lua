@@ -348,10 +348,19 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 
 vim.o.background = "dark"
-vim.cmd([[colorscheme gruvbox]])
+-- vim.cmd([[colorscheme gruvbox]])
 -- vim.cmd([[colorscheme gruvbuddy]])
 -- vim.cmd([[colorscheme colorbuddy]])
 -- [[ Basic Keymaps ]]
+
+--  Color Scheme kanagawa.
+-- wave the default heart-warming theme,
+-- dragon for those late-night sessions
+-- lotus for when you're out in the open.
+vim.cmd([[colorscheme kanagawa-dragon]])
+
+
+
 
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
