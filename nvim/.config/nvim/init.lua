@@ -46,9 +46,8 @@ vim.g.maplocalleader = ' '
 vim.o.scrolloff = 8
 
 
--- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
-vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
--- Hello world
+vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+-- vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
 
 
 -- [[ Install `lazy.nvim` plugin manager ]]
@@ -145,8 +144,8 @@ require('lazy').setup({
         changedelete = { text = '~' },
         untracked    = { text = '┆' },
       },
-      signcolumn = false,
-      numhl = true,
+      signcolumn = true,
+      numhl = false,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
         local function map(mode, l, r, opts)
@@ -231,20 +230,6 @@ require('lazy').setup({
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
     }
-  },
-  {
-    -- Set lualine as statusline
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled = true,
-        theme = 'auto',
-        component_separators = '|',
-        section_separators = '',
-      },
-    },
   },
 
   {
@@ -353,13 +338,9 @@ vim.o.background = "dark"
 -- vim.cmd([[colorscheme colorbuddy]])
 -- [[ Basic Keymaps ]]
 
---  Color Scheme kanagawa.
--- wave the default heart-warming theme,
--- dragon for those late-night sessions
--- lotus for when you're out in the open.
-vim.cmd([[colorscheme kanagawa-dragon]])
-
-
+-- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
+-- or just use <C-\><C-n> to exit terminal mode
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 
 -- Keymaps for better default experience
