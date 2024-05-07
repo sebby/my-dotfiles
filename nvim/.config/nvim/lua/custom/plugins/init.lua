@@ -13,8 +13,27 @@ return {
 			-- wave the default heart-warming theme,
 			-- dragon for those late-night sessions
 			-- lotus for when you're out in the open.
-			vim.cmd.colorscheme 'kanagawa-dragon'
+			vim.cmd.colorscheme 'kanagawa-lotus'
+			print("Hello from init.lua")
 		end
+
+	},
+	{
+		"epwalsh/obsidian.nvim",
+		version      = "*",
+		lazy         = true,
+		ft           = "markdown",
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+
+		opts         = {
+			workspaces = {
+				{
+					name = "Orange",
+					path = "~/Documents/obsidian/coffre_gitlab"
+				} }
+		}
 
 	}
 
