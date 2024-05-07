@@ -46,9 +46,8 @@ vim.g.maplocalleader = ' '
 vim.o.scrolloff = 8
 
 
--- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
-vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
--- Hello world
+vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+-- vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
 
 
 -- [[ Install `lazy.nvim` plugin manager ]]
@@ -145,8 +144,8 @@ require('lazy').setup({
         changedelete = { text = '~' },
         untracked    = { text = '┆' },
       },
-      signcolumn = false,
-      numhl = true,
+      signcolumn = true,
+      numhl = false,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
         local function map(mode, l, r, opts)
@@ -232,20 +231,6 @@ require('lazy').setup({
       -- refer to the configuration section below
     }
   },
-  {
-    -- Set lualine as statusline
-    'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
-    -- See `:help lualine.txt`
-    opts = {
-      options = {
-        icons_enabled = true,
-        theme = 'auto',
-        component_separators = '|',
-        section_separators = '',
-      },
-    },
-  },
 
   {
     -- Add indentation guides even on blank lines
@@ -293,7 +278,7 @@ require('lazy').setup({
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
   require 'kickstart.plugins.autoformat',
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.debug',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
@@ -353,13 +338,9 @@ vim.o.background = "dark"
 -- vim.cmd([[colorscheme colorbuddy]])
 -- [[ Basic Keymaps ]]
 
---  Color Scheme kanagawa.
--- wave the default heart-warming theme,
--- dragon for those late-night sessions
--- lotus for when you're out in the open.
-vim.cmd([[colorscheme kanagawa-dragon]])
-
-
+-- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
+-- or just use <C-\><C-n> to exit terminal mode
+vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 
 -- Keymaps for better default experience
@@ -466,6 +447,12 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+
+
+-- Shortcut for searching your Neovim configuration files
+vim.keymap.set('n', '<leader>sn', function()
+  require('telescope.builtin').find_files { cwd = vim.fn.stdpath 'config' }
+end, { desc = '[S]earch [N]eovim files' })
 
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
@@ -616,8 +603,6 @@ require('mason-lspconfig').setup()
 --
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
---
---  If you want to override the default filetypes that your language server will attach to you can
 --  define the property 'filetypes' to the map in question.
 local servers = {
   -- clangd = {},
