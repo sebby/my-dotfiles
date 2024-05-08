@@ -208,29 +208,6 @@ require('lazy').setup({
     },
   },
 
-  {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    lazy = false,
-    config = function()
-      require('onedark').setup {
-        -- Set a style preset. 'dark' is default.
-        style = 'warmer', -- dark, darker, cool, deep, warm, warmer, light
-      }
-      -- require('onedark').load()
-    end,
-  },
-
-  -- Lua
-  {
-    "folke/zen-mode.nvim",
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  },
 
   {
     -- Add indentation guides even on blank lines
