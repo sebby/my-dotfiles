@@ -44,6 +44,7 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.o.scrolloff = 8
+vim.g.swapfile = false
 
 
 -- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
