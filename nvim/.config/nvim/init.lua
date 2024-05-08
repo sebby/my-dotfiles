@@ -46,8 +46,8 @@ vim.g.maplocalleader = ' '
 vim.o.scrolloff = 8
 
 
-vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
--- vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
+-- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
 
 
 -- [[ Install `lazy.nvim` plugin manager ]]
@@ -137,12 +137,11 @@ require('lazy').setup({
     opts = {
       -- See `:help gitsigns.txt`
       signs = {
-        add          = { text = '┃' },
-        change       = { text = '┃' },
-        delete       = { text = '_' },
-        topdelete    = { text = '‾' },
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
         changedelete = { text = '~' },
-        untracked    = { text = '┆' },
       },
       signcolumn = true,
       numhl = false,
