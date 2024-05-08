@@ -172,12 +172,14 @@ fi
 source "$HOME/.cargo/env"
 
 
-
+export OSMACHINE="ubuntu"
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         # ...
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
+	export OSMACHINE="apple"
 	print "Je suis dans un Mac OS"
+
 elif [[ "$OSTYPE" == "cygwin" ]]; then
         # POSIX compatibility layer and Linux environment emulation for Windows
 elif [[ "$OSTYPE" == "msys" ]]; then
@@ -188,7 +190,13 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then
         # ...
 else
         # Unknown.
+	print "Je suis dans ?????"
 fi
+
+
+
+
+
 
 
 eval "$(starship init zsh)"
