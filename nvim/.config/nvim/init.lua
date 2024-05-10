@@ -3,7 +3,6 @@
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
-
 Kickstart.nvim is *not* a distribution.
 
 Kickstart.nvim is a template for your own configuration.
@@ -48,7 +47,7 @@ vim.g.swapfile = false
 
 
 -- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
-vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
+-- vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
 
 
 -- [[ Install `lazy.nvim` plugin manager ]]
@@ -427,6 +426,11 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 
 
 -- Shortcut for searching your Neovim configuration files
+vim.keymap.set('n', '<leader>sdo', function()
+  require('telescope.builtin').git_files { cwd = '~/.dotfiles' }
+end, { desc = '[S]earch [DO]tfiles' })
+
+-- Shortcut for searching your Neovim configuration files
 vim.keymap.set('n', '<leader>sn', function()
   require('telescope.builtin').find_files { cwd = vim.fn.stdpath 'config' }
 end, { desc = '[S]earch [N]eovim files' })
@@ -597,6 +601,11 @@ local servers = {
       -- diagnostics = { disable = { 'missing-fields' } },
     },
   },
+  lexical = {},
+  intelephense = {
+    -- installer avec la licence achete en 202o.
+  }
+
 }
 
 -- Setup neovim lua configuration

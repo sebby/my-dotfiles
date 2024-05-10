@@ -210,3 +210,5 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(thefuck --alias)"
 
 eval $(thefuck --alias)
+# New tool to see the history, with crtl+r
+eval "$(atuin init zsh)"
