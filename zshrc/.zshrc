@@ -212,3 +212,12 @@ eval "$(thefuck --alias)"
 eval $(thefuck --alias)
 # New tool to see the history, with crtl+r
 eval "$(atuin init zsh)"
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/sebastiencunin/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
