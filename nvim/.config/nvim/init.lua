@@ -144,7 +144,7 @@ require('lazy').setup({
         changedelete = { text = '~' },
       },
       signcolumn = true,
-      numhl = false,
+      numhl = true,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
         local function map(mode, l, r, opts)
@@ -449,7 +449,7 @@ end, { desc = '[S]earch [N]eovim files' })
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash' },
+    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'javascript', 'vimdoc', 'vim', 'bash' },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
