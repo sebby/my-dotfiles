@@ -172,12 +172,14 @@ fi
 source "$HOME/.cargo/env"
 
 
-
+export OSMACHINE="ubuntu"
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         # ...
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
+	export OSMACHINE="apple"
 	print "Je suis dans un Mac OS"
+
 elif [[ "$OSTYPE" == "cygwin" ]]; then
         # POSIX compatibility layer and Linux environment emulation for Windows
 elif [[ "$OSTYPE" == "msys" ]]; then
@@ -188,6 +190,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then
         # ...
 else
         # Unknown.
+	print "Je suis dans ?????"
 fi
 
 
@@ -198,7 +201,6 @@ fi
 fpath=(${ASDF_DIR}/completions $fpath)
 # initialise completions with ZSH's compinit
 autoload -Uz compinit && compinit
-
 
 
 eval "$(starship init zsh)"
@@ -212,3 +214,6 @@ eval "$(zoxide init --cmd cd zsh)"
 eval "$(thefuck --alias)"
 
 eval $(thefuck --alias)
+# New tool to see the history, with crtl+r
+eval "$(atuin init zsh)"
+

@@ -3,7 +3,6 @@
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
-
 Kickstart.nvim is *not* a distribution.
 
 Kickstart.nvim is a template for your own configuration.
@@ -44,9 +43,10 @@ P.S. You can delete this when you're done too. It's your config now :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.o.scrolloff = 8
+vim.g.swapfile = false
 
 
-vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
+-- vim.cmd("set list listchars=tab:>\\ ,trail:-,eol:↲")
 -- vim.cmd("set list listchars=tab:»\\ ,trail:-,eol:↲")
 
 
@@ -137,15 +137,14 @@ require('lazy').setup({
     opts = {
       -- See `:help gitsigns.txt`
       signs = {
-        add          = { text = '┃' },
-        change       = { text = '┃' },
-        delete       = { text = '_' },
-        topdelete    = { text = '‾' },
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
         changedelete = { text = '~' },
-        untracked    = { text = '┆' },
       },
       signcolumn = true,
-      numhl = false,
+      numhl = true,
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
         local function map(mode, l, r, opts)
@@ -208,29 +207,6 @@ require('lazy').setup({
     },
   },
 
-  {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
-    lazy = false,
-    config = function()
-      require('onedark').setup {
-        -- Set a style preset. 'dark' is default.
-        style = 'warmer', -- dark, darker, cool, deep, warm, warmer, light
-      }
-      -- require('onedark').load()
-    end,
-  },
-
-  -- Lua
-  {
-    "folke/zen-mode.nvim",
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  },
 
   {
     -- Add indentation guides even on blank lines
@@ -238,7 +214,9 @@ require('lazy').setup({
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help ibl`
     main = 'ibl',
-    opts = {},
+    opts = {
+      scope = { enabled = false }
+    },
   },
 
   -- "gc" to comment visual regions/lines
@@ -373,6 +351,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
+    layout_strategy = 'horizontal',
+    layout_config = {
+      -- vertical = { height = 0.95 },
+      preview_width = 0.55,
+      prompt_position = "top"
+    },
+    sorting_strategy = "ascending",
+    scroll_strategy = "cycle",
     mappings = {
       i = {
         ['<C-u>'] = false,
@@ -451,6 +437,11 @@ vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = 
 
 
 -- Shortcut for searching your Neovim configuration files
+vim.keymap.set('n', '<leader>sdo', function()
+  require('telescope.builtin').git_files { cwd = '~/.dotfiles' }
+end, { desc = '[S]earch [DO]tfiles' })
+
+-- Shortcut for searching your Neovim configuration files
 vim.keymap.set('n', '<leader>sn', function()
   require('telescope.builtin').find_files { cwd = vim.fn.stdpath 'config' }
 end, { desc = '[S]earch [N]eovim files' })
@@ -461,7 +452,7 @@ end, { desc = '[S]earch [N]eovim files' })
 vim.defer_fn(function()
   require('nvim-treesitter.configs').setup {
     -- Add languages to be installed here that you want installed for treesitter
-    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash' },
+    ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'javascript', 'vimdoc', 'vim', 'bash' },
 
     -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
     auto_install = false,
@@ -621,6 +612,11 @@ local servers = {
       -- diagnostics = { disable = { 'missing-fields' } },
     },
   },
+  lexical = {},
+  intelephense = {
+    -- installer avec la licence achete en 202o.
+  }
+
 }
 
 -- Setup neovim lua configuration
