@@ -13,7 +13,7 @@ return {
 			-- wave the default heart-warming theme,
 			-- dragon for those late-night sessions
 			-- lotus for when you're out in the open.
-			vim.cmd.colorscheme 'kanagawa-dragon'
+			vim.cmd.colorscheme 'kanagawa-lotus'
 		end
 
 	},
