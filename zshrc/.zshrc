@@ -138,10 +138,18 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-alias ll='eza --all --long --header --icons --git'
-alias tree='eza --tree --icons -L=2'
+# alias ll='eza --all --long --header --icons --git'
+# alias tree='eza --tree --icons -L=2'
+# alias lll='eza --tree --level=2 --long --git --icons'
 alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
-alias lll='eza --tree --level=2 --long --git --icons'
+
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
+
 # export PAGER=most
 # export MANPAGER=most
 export PATH="$PATH:$HOME/.composer/vendor/bin"
