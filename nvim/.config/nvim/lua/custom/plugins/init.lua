@@ -16,7 +16,7 @@ return {
 			vim.cmd.colorscheme 'kanagawa-lotus'
 		end,
 		config = function()
-			print 'herllo world'
+			print 'hello world'
 		end
 
 	},
