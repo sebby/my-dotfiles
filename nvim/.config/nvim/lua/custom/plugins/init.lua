@@ -22,5 +22,8 @@ return {
 	{
 		"nvim-treesitter/nvim-treesitter-context",
 	}
-
+	,
+	{
+		"RRethy/base16-nvim"
+	}
 }
