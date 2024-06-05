@@ -27,5 +27,6 @@ return {
 	{
 		"RRethy/base16-nvim"
 	},
-	{ "onsails/lspkind.nvim" }
+	{ "onsails/lspkind.nvim" },
+
 }

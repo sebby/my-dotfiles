@@ -318,7 +318,7 @@ vim.o.background = "dark"
 -- vim.cmd([[colorscheme gruvbuddy]])
 -- vim.cmd([[colorscheme colorbuddy]])
 -- [[ Basic Keymaps ]]
-vim.cmd([[colorscheme base16-atelier-estuary-light]])
+-- vim.cmd([[colorscheme base16-atelier-estuary-light]])
 
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
@@ -354,6 +354,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
+
     layout_strategy = 'horizontal',
     layout_config = {
       -- vertical = { height = 0.95 },
@@ -698,6 +699,7 @@ cmp.setup {
     { name = 'path' },
     { name = 'buffer' },
   },
+
   formatting = {
     fields = { "kind", "abbr", "menu" },
     expandable_indicator = true,
