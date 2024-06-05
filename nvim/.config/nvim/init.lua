@@ -318,6 +318,7 @@ vim.o.background = "dark"
 -- vim.cmd([[colorscheme gruvbuddy]])
 -- vim.cmd([[colorscheme colorbuddy]])
 -- [[ Basic Keymaps ]]
+vim.cmd([[colorscheme base16-atelier-estuary-light]])
 
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
@@ -701,17 +702,17 @@ cmp.setup {
     fields = { "kind", "abbr", "menu" },
     expandable_indicator = true,
     format = lspkind.cmp_format({
-      -- mode = 'symbol', -- show only symbol annotations
-      maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+      -- mode = 'text_symbol', -- show only symbol annotations
+
+      preset = 'codicons',
+      mode = 'symbol_text', -- show only symbol annotations
+      maxwidth = 50,        -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
       -- can also be a function to dynamically calculate max width such as
       -- maxwidth = function() return math.floor(0.45 * vim.o.columns) end,
-      ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
-      -- show_labelDetails = true, -- show labelDetails in menu. Disabled by default
-
-
+      ellipsis_char = '...',    -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
+      show_labelDetails = true, -- show labelDetails in menu. Disabled by default
     })
   }
 }
-
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
