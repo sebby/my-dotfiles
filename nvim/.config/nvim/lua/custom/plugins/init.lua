@@ -4,13 +4,20 @@
 -- See the kickstart.nvim README for more information
 return {
 	-- { "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
-	{ "tjdevries/colorbuddy.nvim" },
+	{
+		"tjdevries/colorbuddy.nvim",
+		config = function()
+			vim.cmd.colorscheme 'gruvbuddy'
+		end
+	},
+
 	-- {
 	-- 	"rebelot/kanagawa.nvim",
 	-- 	priority = 1000,
 	-- 	init = function()
 	-- 		--  Color Scheme kanagawa.
 	-- 		-- wave the default heart-warming theme,
+	-- 		
 	-- 		-- dragon for those late-night sessions
 	-- 		-- lotus for when you're out in the open.
 	-- 		vim.cmd.colorscheme 'kanagawa-lotus'
