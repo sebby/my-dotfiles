@@ -224,3 +224,4 @@ path=('/Users/sebastiencunin/.juliaup/bin' $path)
 export PATH
 
 # <<< juliaup initialize <<<
+export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
