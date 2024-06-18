@@ -3,6 +3,14 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+	{
+		"savq/melange-nvim",
+		config = function()
+			vim.opt.termguicolors = true
+			vim.cmd.colorscheme 'melange'
+		end
+	},
+
 	-- { "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
 	{ "tjdevries/colorbuddy.nvim" },
 	-- {
