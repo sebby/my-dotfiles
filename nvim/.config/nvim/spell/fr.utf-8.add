@@ -29,6 +29,7 @@ Ranni
 Loretta
 emotes
 scorer
+<<<<<<< HEAD
 tokens
 YML
 mock
@@ -36,3 +37,17 @@ call
 endpoint
 priceStocks
 VF
+=======
+print
+markdown
+colorscheme
+markdowns
+ftp
+plugin
+OCAML
+JS
+REASOML
+exos
+Exilir
+Elixir
+>>>>>>> master

@@ -215,3 +215,10 @@ eval $(thefuck --alias)
 # New tool to see the history, with crtl+r
 eval "$(atuin init zsh)"
 
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/sebastiencunin/.juliaup/bin' $path)
+export PATH
+
+export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
