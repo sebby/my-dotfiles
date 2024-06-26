@@ -7,7 +7,6 @@ classic: false
 
 
 
-
 # == Blocks ==
 # This specifies the columns and their order when using the long and the tree
 # layout.
@@ -31,7 +30,7 @@ color:
   # When "classic" is set, this is set to "no-color".
   # Possible values: default, custom
   # When "custom" is set, lsd will look in the config directory for `colors.yaml`.
-  theme: default
+  theme: no-color
 
 # == Date ==
 # This specifies the date format for the date column. The freeform format
@@ -59,7 +58,7 @@ icons:
   when: auto
   # Which icon theme to use.
   # Possible values: fancy, unicode
-  theme: fancy
+  theme: unicode
   # Separator between icon and the name
   # Default to 1 space
   separator: " "
