@@ -5,6 +5,9 @@
 # Possible values: false, true
 classic: false
 
+
+
+
 # == Blocks ==
 # This specifies the columns and their order when using the long and the tree
 # layout.
