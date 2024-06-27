@@ -280,24 +280,24 @@ vim.o.hlsearch = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.cursorline = true
--- Fonction pour définir la couleur du groupe CursorLine
-local function set_cursorline_color()
-  local colors = {
-    nord = "#2e3440",
-    gruvbox = "#3c3836",
-    melange = "#3c3836",
-    onedark = "#282c34"
-  }
-  local theme = vim.g.colors_name
-  if colors[theme] then
-    vim.cmd("highlight CursorLine guibg=" .. colors[theme] .. " guifg=NONE")
-  else
-    vim.cmd("highlight CursorLine guibg=#2e3440 guifg=NONE") -- Valeur par défaut
-  end
-end
+-- -- Fonction pour définir la couleur du groupe CursorLine
+-- local function set_cursorline_color()
+--   local colors = {
+--     nord = "#2e3440",
+--     gruvbox = "#3c3836",
+--     melange = "#3c3836",
+--     onedark = "#282c34"
+--   }
+--   local theme = vim.g.colors_name
+--   if colors[theme] then
+--     vim.cmd("highlight CursorLine guibg=" .. colors[theme] .. " guifg=NONE")
+--   else
+--     vim.cmd("highlight CursorLine guibg=#2e3440 guifg=NONE") -- Valeur par défaut
+--   end
+-- end
 
 -- Définir la couleur de la ligne en cours
-set_cursorline_color()
+-- set_cursorline_color()
 
 -- Enable mouse mode
 vim.o.mouse = 'a'

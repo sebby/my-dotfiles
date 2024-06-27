@@ -7,13 +7,14 @@ return {
 		"savq/melange-nvim",
 		config = function()
 			vim.opt.termguicolors = true
-			-- vim.cmd.colorscheme 'melange'
+			vim.cmd.colorscheme 'melange'
 		end
 	},
 
 	-- { "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
 	{
 		"tjdevries/colorbuddy.nvim",
+		enabled = false,
 		config = function()
 			-- vim.cmd.colorscheme 'gruvbuddy'
 		end
@@ -28,7 +29,7 @@ return {
 	}
 	,
 	{
-		"RRethy/base16-nvim"
+		{ "RRethy/base16-nvim", enabled = true }
 	},
 	{ "onsails/lspkind.nvim" },
 
