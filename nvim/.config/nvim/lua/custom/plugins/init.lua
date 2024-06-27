@@ -22,15 +22,23 @@ return {
 
 	{
 		"rebelot/kanagawa.nvim",
-
+		enabled = false,
 	},
+	{
+		{ "RRethy/base16-nvim", enabled = true }
+	},
+	-- Some plugins en vrac.
+	{ "onsails/lspkind.nvim" },
 	{
 		"nvim-treesitter/nvim-treesitter-context",
 	}
 	,
 	{
-		{ "RRethy/base16-nvim", enabled = true }
-	},
-	{ "onsails/lspkind.nvim" },
+
+		"iamcco/markdown-preview.nvim",
+		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+		ft = { "markdown" },
+		build = function() vim.fn["mkdp#util#install"]() end,
+	}
 
 }
