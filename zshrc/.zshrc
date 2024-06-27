@@ -149,6 +149,8 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 
+alias t="task"
+alias t_add="task add"
 
 # export PAGER=most
 # export MANPAGER=most
@@ -160,6 +162,7 @@ alias sandbox-drupal="cd ~/Projects/labs/php/sandbox-drupal"
 alias vim="nvim"
 # alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
 # alias vim='NVIM_APPNAME="kickstart" nvim'
+
 
 
 
