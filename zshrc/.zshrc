@@ -106,7 +106,7 @@ export LANG=fr_FR.UTF-8
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -118,7 +118,7 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
@@ -135,8 +135,7 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # export PATH="/usr/local/sbin:$PATH"
 
 
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
+# alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # alias ll='eza --all --long --header --icons --git'
 # alias tree='eza --tree --icons -L=2'
@@ -157,7 +156,8 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 alias sandbox-drupal="cd ~/Projects/labs/php/sandbox-drupal"
 
-# alias vim="nvim"
+alias vim="nvim"
+alias zshconfig="nvim ~/.zshrc"
 # alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
 alias vim='NVIM_APPNAME="kickstart" nvim'
 
