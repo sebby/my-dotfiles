@@ -26,7 +26,7 @@ editor=nvim
 # Color theme (uncomment one to use)
 # include light-16.theme
 #include light-256.theme
-#include dark-16.theme
+# include ~/Downloads/tw-themes-config/dark-green-256.theme
 # include ~/Downloads/tw-themes-config/light-16-names.theme
 
 #include dark-red-256.theme
@@ -38,7 +38,7 @@ editor=nvim
 #include dark-gray-blue-256.theme
 #include solarized-dark-256.theme
 #include solarized-light-256.theme
-#include no-color.theme
+# include no-color.theme
 
 context.orange=+orange
 context.personnel.read=+game or +personnel

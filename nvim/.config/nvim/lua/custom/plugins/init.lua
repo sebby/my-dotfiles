@@ -7,7 +7,7 @@ return {
 		"savq/melange-nvim",
 		config = function()
 			vim.opt.termguicolors = true
-			vim.cmd.colorscheme 'melange'
+			-- vim.cmd.colorscheme 'melange'
 		end
 	},
 
@@ -33,7 +33,16 @@ return {
 		"nvim-treesitter/nvim-treesitter-context",
 	}
 	,
+
 	{
+		-- retour au source avec le darcula-dark de jetbrains.
+		"xiantang/darcula-dark.nvim",
+		config = function()
+			vim.cmd.colorscheme 'darcula-dark'
+		end,
+	},
+	{
+
 
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
