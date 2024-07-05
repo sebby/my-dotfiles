@@ -225,3 +225,5 @@ export PATH
 
 # <<< juliaup initialize <<<
 export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
+# Fx is a powerful tool, terminal JSON viewer
+source <(fx --comp zsh)
