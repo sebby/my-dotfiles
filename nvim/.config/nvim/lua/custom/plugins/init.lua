@@ -34,6 +34,14 @@ return {
 	,
 	{
 		"onsails/lspkind.nvim"
-	}
+	},
+	{
+		-- retour au source avec le darcula-dark de jetbrains.
+		"xiantang/darcula-dark.nvim",
+		config = function()
+			vim.cmd.colorscheme 'darcula-dark'
+		end,
+	},
+
 
 }
