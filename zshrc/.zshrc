@@ -141,6 +141,10 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # alias tree='eza --tree --icons -L=2'
 # alias lll='eza --tree --level=2 --long --git --icons'
 alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+
+
+
 
 alias ls='lsd'
 alias l='ls -l'
