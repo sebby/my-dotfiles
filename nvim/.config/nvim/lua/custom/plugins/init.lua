@@ -14,9 +14,10 @@ return {
 	-- { "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
 	{
 		"tjdevries/colorbuddy.nvim",
-		enabled = false,
+		-- enabled = false,
 		config = function()
-			-- vim.cmd.colorscheme 'gruvbuddy'
+			vim.opt.termguicolors = true
+			vim.cmd.colorscheme 'gruvbuddy'
 		end
 	},
 
@@ -40,6 +41,7 @@ return {
 	{
 		-- retour au source avec le darcula-dark de jetbrains.
 		"xiantang/darcula-dark.nvim",
+		enabled = false,
 		config = function()
 			vim.cmd.colorscheme 'darcula-dark'
 		end,
