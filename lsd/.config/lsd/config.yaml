@@ -19,18 +19,6 @@ blocks:
   - links
 
 
-# == Color ==
-# This has various color options. (Will be expanded in the future.)
-color:
-  # When to colorize the output.
-  # When "classic" is set, this is set to "never".
-  # Possible values: never, auto, always
-  when: auto
-  # How to colorize the output.
-  # When "classic" is set, this is set to "no-color".
-  # Possible values: default, custom
-  # When "custom" is set, lsd will look in the config directory for `colors.yaml`.
-  theme: no-color
 
 # == Date ==
 # This specifies the date format for the date column. The freeform format
@@ -49,19 +37,6 @@ dereference: false
 # What items to display. Do not specify this for the default behavior.
 # Possible values: all, almost-all, directory-only
 # display: all
-
-# == Icons ==
-icons:
-  # When to use icons.
-  # When "classic" is set, this is set to "never".
-  # Possible values: always, auto, never
-  when: auto
-  # Which icon theme to use.
-  # Possible values: fancy, unicode
-  theme: unicode
-  # Separator between icon and the name
-  # Default to 1 space
-  separator: " "
 
 # == Ignore Globs ==
 # A list of globs to ignore when listing.

@@ -210,15 +210,14 @@ fi
 
 
  # ASDF TOOLS
-. "$HOME/.asdf/asdf.sh"
+# "$HOME/.asdf/asdf.sh"
 
 eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
-eval "$(thefuck --alias)"
+# eval "$(thefuck --alias)"
 
-eval $(thefuck --alias)
 # New tool to see the history, with crtl+r
 eval "$(atuin init zsh)"
 
@@ -226,7 +225,6 @@ eval "$(atuin init zsh)"
 # !! Contents within this block are managed by juliaup !!
 
 path=('/Users/sebastiencunin/.juliaup/bin' $path)
-export PATH
 
 export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 # Fx is a powerful tool, terminal JSON viewer
