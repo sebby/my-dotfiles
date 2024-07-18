@@ -135,13 +135,21 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # export PATH="/usr/local/sbin:$PATH"
 
 
+
+######## START SETTINGS FOR FZF
+
+export FZF_DEFAULT_COMMAND='fd --type f'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+
+
+########END SETTINGS FZF
 # alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # alias ll='eza --all --long --header --icons --git'
 # alias tree='eza --tree --icons -L=2'
 # alias lll='eza --tree --level=2 --long --git --icons'
 alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
-alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+
 
 
 
@@ -210,15 +218,14 @@ fi
 
 
  # ASDF TOOLS
-. "$HOME/.asdf/asdf.sh"
+# "$HOME/.asdf/asdf.sh"
 
 eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
-eval "$(thefuck --alias)"
+# eval "$(thefuck --alias)"
 
-eval $(thefuck --alias)
 # New tool to see the history, with crtl+r
 eval "$(atuin init zsh)"
 
@@ -226,7 +233,6 @@ eval "$(atuin init zsh)"
 # !! Contents within this block are managed by juliaup !!
 
 path=('/Users/sebastiencunin/.juliaup/bin' $path)
-export PATH
 
 export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 # Fx is a powerful tool, terminal JSON viewer

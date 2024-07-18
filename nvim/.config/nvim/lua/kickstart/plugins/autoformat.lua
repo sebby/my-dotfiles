@@ -51,8 +51,9 @@ return {
         end
 
 
-        -- juste pour les projets Drupal,,car on se trouve dans le PSR2 et pas celui de Drupal et DrupalPratice.
+        -- juste pour les projets Drupal, car on se trouve dans le PSR2 et pas celui de Drupal et DrupalPractice.
         if client.name == 'intelephense' then
+          -- print("je suis dans le intelephense")
           return
         end
         -- Create an autocmd that will run *before* we save the buffer.
