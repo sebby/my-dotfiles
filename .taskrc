@@ -28,7 +28,7 @@ editor=nvim
 #include light-256.theme
 # include ~/Downloads/tw-themes-config/dark-green-256.theme
 # include ~/Downloads/tw-themes-config/
-# include ~/Downloads/tw-themes-config/light-16-names.theme
+include ~/Downloads/tw-themes-config/light-16-names.theme
 
 #include dark-red-256.theme
 #include dark-green-256.theme
