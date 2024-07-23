@@ -5,6 +5,7 @@
 return {
 	{
 		"savq/melange-nvim",
+		enabled = false,
 		config = function()
 			vim.opt.termguicolors = true
 			-- vim.cmd.colorscheme 'melange'
@@ -14,7 +15,7 @@ return {
 	-- { "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
 	{
 		"tjdevries/colorbuddy.nvim",
-		-- enabled = false,
+		enabled = false,
 		config = function()
 			vim.opt.termguicolors = true
 			vim.cmd.colorscheme 'gruvbuddy'
@@ -23,7 +24,11 @@ return {
 
 	{
 		"rebelot/kanagawa.nvim",
-		enabled = false,
+		-- enabled = false,
+		config = function()
+			vim.opt.termguicolors = true
+			vim.cmd.colorscheme 'kanagawa'
+		end
 	},
 	{
 		{ "RRethy/base16-nvim", enabled = true }
