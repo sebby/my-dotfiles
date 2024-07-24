@@ -33,7 +33,8 @@ alias cp='cp -i'
 alias dockerakeneo='docker exec -ti bose_akeneo bash'
 alias dockerdrupal='docker exec -ti -u www-data bose_drupal bash'
 alias drupaldocker='docker exec -ti -u www-data bose_drupal bash'
-alias dockerdrupal_log='docker logs bose_syslog | grep '\''"application": "drupal"'\'''
+# alias dockerdrupal_log='docker logs bose_syslog | grep '\''"application": "drupal"'\'''
+alias dockerdrupal_log="docker logs bose_syslog --tail 20 | jq -s '[.[] | {application, level, level_name, channel, message}]'"
 alias env_dev="cd $HOME/web/BoSE/env-dev/deploy_dev_env" 
 alias h="history"  
 
