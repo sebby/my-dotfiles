@@ -5,6 +5,7 @@
 return {
 	{
 		"savq/melange-nvim",
+		enabled = false,
 		config = function()
 			vim.opt.termguicolors = true
 			-- vim.cmd.colorscheme 'melange'
@@ -26,7 +27,7 @@ return {
 		-- enabled = false,
 		config = function()
 			vim.opt.termguicolors = true
-			vim.cmd.colorscheme 'kanagawa-dragon'
+			vim.cmd.colorscheme 'kanagawa-wave'
 		end
 	},
 	{

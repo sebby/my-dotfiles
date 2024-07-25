@@ -133,10 +133,19 @@ require('lazy').setup({
 
   -- Useful plugin to show you pending keybinds.
   {
-    'folke/which-key.nvim',
-    tag = 'v2.0.0',
-    opts = {}
+    "folke/which-key.nvim",
+    tag = 'v2.1.0',
+    event = "VeryLazy",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
   },
+
+
+
+
   {
     -- Adds git related signs to the gutter, as well as utilities for managing changes
     'lewis6991/gitsigns.nvim',
@@ -333,7 +342,7 @@ vim.o.timeoutlen = 300
 vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
-vim.o.termguicolors = true
+-- vim.o.termguicolors = true
 
 vim.o.background = "dark"
 -- vim.o.background = "light"
