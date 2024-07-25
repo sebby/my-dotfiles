@@ -14,7 +14,7 @@ return {
 	-- { "ellisonleao/gruvbox.nvim", priority = 1000,   config = true },
 	{
 		"tjdevries/colorbuddy.nvim",
-		-- enabled = false,
+		enabled = false,
 		config = function()
 			vim.opt.termguicolors = true
 			vim.cmd.colorscheme 'gruvbuddy'
@@ -23,7 +23,11 @@ return {
 
 	{
 		"rebelot/kanagawa.nvim",
-		enabled = false,
+		-- enabled = false,
+		config = function()
+			vim.opt.termguicolors = true
+			vim.cmd.colorscheme 'kanagawa-dragon'
+		end
 	},
 	{
 		{ "RRethy/base16-nvim", enabled = true }
@@ -32,9 +36,7 @@ return {
 	{ "onsails/lspkind.nvim" },
 	{
 		"nvim-treesitter/nvim-treesitter-context",
-	}
-	,
-
+	},
 	{
 		"onsails/lspkind.nvim"
 	},
