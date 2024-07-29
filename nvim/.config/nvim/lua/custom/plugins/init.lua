@@ -57,6 +57,18 @@ return {
 		ft = { "markdown" },
 		build = function() vim.fn["mkdp#util#install"]() end,
 	}
+	,
+	{
+
+		"romainl/Apprentice",
+		enabled = false,
+
+		config = function()
+			vim.opt.termguicolors = true
+			vim.cmd.colorscheme 'apprentice'
+		end
+
+	}
 
 
 }
