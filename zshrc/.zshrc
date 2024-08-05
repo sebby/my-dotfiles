@@ -154,11 +154,11 @@ alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs n
 
 
 
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+# alias ls='lsd'
+alias l='lsd -l'
+alias la='lsd -a'
+alias ll='lsd -la'
+alias lt='lsd --tree'
 
 alias t="task"
 alias t_add="task add"
