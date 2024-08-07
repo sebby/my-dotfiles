@@ -186,6 +186,13 @@ fi
 
 
 
+
+if [ -f ~/.scripts_orange ]; then
+	source ~/.scripts_orange
+else    
+	print "404: ~/.scripts_orange not found."
+fi
+
 if [ -f ~/.aliases_work ]; then
 	source ~/.aliases_work
 else    
@@ -239,3 +246,10 @@ export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 source <(fx --comp zsh)
 
 eval $(thefuck --alias)
+
+
+
+
+
+
+
