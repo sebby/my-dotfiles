@@ -44,3 +44,4 @@ editor=nvim
 
 context.orange=+orange
 context.personnel.read=+game or +personnel
+context.gaming = pro:elden_ring or +gaming

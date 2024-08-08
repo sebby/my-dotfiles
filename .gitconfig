@@ -5,3 +5,7 @@
 	defaultBranch = main
 [core]
 	editor = nvim
+
+# Add the alias
+[alias]
+  sort-branches-by-date = !git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)' refs/heads/
