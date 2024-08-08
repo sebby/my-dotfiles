@@ -4,7 +4,8 @@
 [init]
 	defaultBranch = main
 [core]
-	editor = nvim
+	; editor = nvim
+	editor = NVIM_APPNAME="neovim-scn" nvim
 
 # Add the alias
 [alias]
