@@ -90,6 +90,8 @@ plugins=(
 	docker
 	docker-compose
 	z
+	asdf
+	direnv
 )
 
 
@@ -226,6 +228,9 @@ fi
 
  # ASDF TOOLS
 . "$HOME/.asdf/asdf.sh"
+
+## DIRENV necessaire pour l'outil ASDF
+eval "$(direnv hook zsh)"
 
 
 
