@@ -225,7 +225,9 @@ fi
 
 
  # ASDF TOOLS
-"$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/asdf.sh"
+
+
 
 eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
