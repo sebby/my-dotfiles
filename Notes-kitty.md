@@ -1,8 +1,6 @@
 # Kitty Notes
 
 
-
-
 ## comment corriger les soucis de icons avec le pluging LSPKInd.
 ```bash
 kitty --debug-font-fallback
