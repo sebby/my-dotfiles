@@ -85,6 +85,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#bababa,bold'
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
+	brew
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 	docker
