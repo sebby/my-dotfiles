@@ -5,7 +5,7 @@
 # Juste le tool.
 sudo apt-get install geany
 ```
-> Il faut p-e ajouter PGP ??
+> tl faut p-e ajouter PGP ??
 
 ## Installer les plugins sur Ubuntu
 
