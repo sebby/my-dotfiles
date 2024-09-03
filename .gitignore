@@ -7,3 +7,4 @@
 nvim/.config/nvim/lazy-lock.json
 # nvim/.config/
 nvim/.config/nvim/spell
+geany/.config/geany/session.conf
