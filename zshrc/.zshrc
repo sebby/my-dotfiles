@@ -175,10 +175,10 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 alias sandbox-drupal="cd ~/Projects/labs/php/sandbox-drupal"
 
-alias vim="nvim"
+# alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
 # alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
-# alias vim='NVIM_APPNAME="kickstart" nvim'
+alias vim='NVIM_APPNAME="neovim-scn" nvim'
 
 
 
