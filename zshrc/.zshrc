@@ -93,6 +93,8 @@ plugins=(
 	z
 	asdf
 	direnv
+	alias-tips
+	you-should-use
 )
 
 
