@@ -95,6 +95,14 @@ plugins=(
 	direnv
 	alias-tips
 	you-should-use
+	ripgrep
+	fzf
+	drush
+	macos
+	screen
+	thefuck
+	web-search
+	taskwarrior
 )
 
 
@@ -237,6 +245,7 @@ eval "$(direnv hook zsh)"
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
 eval "$(starship init zsh)"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
