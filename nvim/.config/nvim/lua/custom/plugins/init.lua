@@ -61,7 +61,7 @@ return {
 	{
 
 		"romainl/Apprentice",
-		enabled = false,
+		-- enabled = false,
 
 		config = function()
 			vim.opt.termguicolors = true
@@ -70,5 +70,19 @@ return {
 
 	}
 
+	, {
+	"shaunsingh/nord.nvim",
+	enabled = true,
+	config = function()
+		vim.cmd.colorscheme "nord"
+		vim.g.nord_contrast = true
+		vim.g.nord_borders = false
+		vim.g.nord_disable_background = false
+		vim.g.nord_italic = true
+		vim.g.nord_uniform_diff_background = true
+		vim.g.nord_bold = false
+	end
+
+}
 
 }
