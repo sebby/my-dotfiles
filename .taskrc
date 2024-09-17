@@ -16,7 +16,7 @@
 
 # Files
 # data.location=$HOME/.task
-editor=nvim
+# editor=vim
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
 
