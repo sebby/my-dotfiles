@@ -20,15 +20,14 @@ disabled = true
 [character] # The name of the module we are configuring is 'character'
 success_symbol = '[;](green)'
 error_symbol = '[;](red)'
+vimcmd_symbol = '[V](bold green) '
 
 
 # Fill character (empty space) between the left and right prompt
 [fill]
 symbol = " "
 
-# Disable the line break between the first and second prompt lines
-[line_break]
-disabled = false
-
 # @TODO etre 2 lignes 
-# @todo changer le prommpt pour poser le ";"
+
+[cmd_duration]
+format = 'took [$duration]($style) '
