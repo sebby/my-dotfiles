@@ -10,11 +10,25 @@
 # https://starship.rs/advanced-config/#continuation-prompt
 continuation_prompt = '▶▶ '
 
+ # Insert a blank line between shell prompts
+add_newline = true
+
 [battery]
 disabled = true
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green) '
-error_symbol = '[✗](bold red) '
-vimcmd_symbol = '[V](bold green) '
+success_symbol = '[;](green)'
+error_symbol = '[;](red)'
+
+
+# Fill character (empty space) between the left and right prompt
+[fill]
+symbol = " "
+
+# Disable the line break between the first and second prompt lines
+[line_break]
+disabled = false
+
+# @TODO etre 2 lignes 
+# @todo changer le prommpt pour poser le ";"
