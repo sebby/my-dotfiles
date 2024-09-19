@@ -24,7 +24,7 @@ return {
 
 	{
 		"rebelot/kanagawa.nvim",
-		-- enabled = false,
+		enabled = false,
 		config = function()
 			vim.opt.termguicolors = true
 			vim.cmd.colorscheme 'kanagawa-wave'
@@ -60,7 +60,7 @@ return {
 	,
 	{
 		"romainl/Apprentice",
-		-- enabled = false,
+		enabled = false,
 
 		config = function()
 			vim.opt.termguicolors = true
@@ -72,7 +72,7 @@ return {
 	,
 	{
 		"shaunsingh/nord.nvim",
-		-- enabled = true,
+		enabled = false,
 		config = function()
 			vim.cmd.colorscheme "nord"
 			vim.g.nord_contrast = true
