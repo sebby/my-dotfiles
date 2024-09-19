@@ -24,14 +24,14 @@ return {
 
 	{
 		"rebelot/kanagawa.nvim",
-		-- enabled = false,
+		enabled = false,
 		config = function()
 			vim.opt.termguicolors = true
 			vim.cmd.colorscheme 'kanagawa-wave'
 		end
 	},
 	{
-		{ "RRethy/base16-nvim", enabled = true }
+		{ "RRethy/base16-nvim", enabled = false }
 	},
 	-- Some plugins en vrac.
 	{ "onsails/lspkind.nvim" },
@@ -60,7 +60,7 @@ return {
 	,
 	{
 		"romainl/Apprentice",
-		-- enabled = false,
+		enabled = false,
 
 		config = function()
 			vim.opt.termguicolors = true
@@ -72,6 +72,7 @@ return {
 	,
 	{
 		"shaunsingh/nord.nvim",
+		enabled = false,
 		-- enabled = true,
 		config = function()
 			vim.cmd.colorscheme "nord"
@@ -84,5 +85,15 @@ return {
 		end
 
 	}
+	, {
+	"rose-pine/neovim",
+	name = "rose-pine",
+
+	config = function()
+		vim.cmd.colorscheme "rose-pine-dawn"
+	end
+
+}
+
 
 }

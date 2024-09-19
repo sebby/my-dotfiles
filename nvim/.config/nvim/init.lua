@@ -344,7 +344,7 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 -- vim.o.termguicolors = true
 
-vim.o.background = "dark"
+-- vim.o.background = "dark"
 -- vim.o.background = "light"
 -- vim.cmd([[colorscheme gruvbox]])
 -- vim.cmd([[colorscheme gruvbuddy]])

@@ -22,3 +22,6 @@
 ## Script SHELL
 https://stackoverflow.com/questions/394230/how-to-detect-the-os-from-a-bash-script
 
+
+## outil pour savoir si la font active lie bien les symbols.
+https://github.com/thatonecalculator/nerdfetch
