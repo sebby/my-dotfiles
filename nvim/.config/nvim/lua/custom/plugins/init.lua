@@ -92,7 +92,7 @@ return {
 		name = "rose-pine",
 		-- enabled = false,
 		config = function()
-			vim.cmd.colorscheme "rose-pine-dawn"
+			vim.cmd.colorscheme "rose-pine"
 			require("rose-pine").setup({
 				variant = "auto", -- auto, main, moon, or dawn
 				dark_variant = "main", -- main, moon, or dawn
