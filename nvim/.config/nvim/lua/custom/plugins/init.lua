@@ -45,10 +45,9 @@ return {
 	{
 		-- retour au source avec le darcula-dark de jetbrains.
 		"xiantang/darcula-dark.nvim",
-		enabled = false,
 		config = function()
 			vim.cmd.colorscheme 'darcula-dark'
-		end,
+		end
 	},
 	{
 
@@ -61,12 +60,6 @@ return {
 	,
 	{
 		"romainl/Apprentice",
-		enabled = false,
-
-		config = function()
-			vim.opt.termguicolors = true
-			vim.cmd.colorscheme 'apprentice'
-		end
 
 	}
 
@@ -90,7 +83,7 @@ return {
 
 		"rose-pine/neovim",
 		name = "rose-pine",
-		-- enabled = false,
+		enabled = false,
 		config = function()
 			vim.cmd.colorscheme "rose-pine"
 			require("rose-pine").setup({
@@ -152,5 +145,6 @@ return {
 			})
 		end
 	}
+
 
 }
