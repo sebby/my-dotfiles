@@ -95,12 +95,13 @@ plugins=(
 	direnv
 	alias-tips
 	you-should-use
-	ripgrep
+	# ripgrep
 	fzf
 	drush
 	macos
 	screen
 	thefuck
+	starship
 	web-search
 	taskwarrior
 )
@@ -173,8 +174,6 @@ alias la='lsd -a'
 alias ll='lsd -la'
 alias lt='lsd --tree'
 
-alias t="task"
-alias t_add="task add"
 
 # export PAGER=most
 # export MANPAGER=most
@@ -197,14 +196,6 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 
-
-
-
-if [ -f ~/.scripts_orange ]; then
-	source ~/.scripts_orange
-else    
-	print "404: ~/.scripts_orange not found."
-fi
 
 if [ -f ~/.aliases_work ]; then
 	source ~/.aliases_work
@@ -244,7 +235,7 @@ fi
 eval "$(direnv hook zsh)"
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"

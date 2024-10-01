@@ -59,12 +59,6 @@ return {
 	}
 	,
 	{
-		"romainl/Apprentice",
-
-	}
-
-	,
-	{
 		"shaunsingh/nord.nvim",
 		enabled = false,
 		config = function()
