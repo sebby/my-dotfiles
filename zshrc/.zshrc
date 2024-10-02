@@ -92,7 +92,6 @@ plugins=(
 	docker-compose
 	z
 	asdf
-	direnv
 	alias-tips
 	you-should-use
 	# ripgrep
@@ -100,7 +99,6 @@ plugins=(
 	drush
 	macos
 	screen
-	thefuck
 	starship
 	web-search
 	taskwarrior
@@ -232,15 +230,14 @@ fi
 . "$HOME/.asdf/asdf.sh"
 
 ## DIRENV necessaire pour l'outil ASDF
-eval "$(direnv hook zsh)"
-source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
+# eval "$(direnv hook zsh)"
+# source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
 # eval "$(starship init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
-# eval "$(thefuck --alias)"
 
 # New tool to see the history, with crtl+r
 eval "$(atuin init zsh)"
@@ -254,7 +251,6 @@ export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 # Fx is a powerful tool, terminal JSON viewer
 source <(fx --comp zsh)
 
-eval $(thefuck --alias)
 
 
 
