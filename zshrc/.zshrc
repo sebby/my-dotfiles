@@ -161,6 +161,7 @@ alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 # alias tree='eza --tree --icons -L=2'
 # alias lll='eza --tree --level=2 --long --git --icons'
 alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs nvim'
+alias taskfile='/snap/task/current/task'
 
 
 
@@ -250,6 +251,7 @@ path=('/Users/sebastiencunin/.juliaup/bin' $path)
 export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 # Fx is a powerful tool, terminal JSON viewer
 source <(fx --comp zsh)
+
 
 
 
