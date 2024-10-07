@@ -164,9 +164,6 @@ alias  v='fd --ignore-case --type f --hidden --exclude .git |fzf-tmux -p|xargs n
 alias taskfile='/snap/task/current/task'
 
 
-
-
-
 # alias ls='lsd'
 alias l='lsd -l'
 alias la='lsd -a'
@@ -251,9 +248,6 @@ path=('/Users/sebastiencunin/.juliaup/bin' $path)
 export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 # Fx is a powerful tool, terminal JSON viewer
 source <(fx --comp zsh)
-
-
-
 
 
 function yy() {
