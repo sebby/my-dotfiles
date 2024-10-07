@@ -101,7 +101,7 @@ plugins=(
 	screen
 	starship
 	web-search
-	taskwarrior
+	# taskwarrior
 )
 
 
@@ -205,6 +205,8 @@ source "$HOME/.cargo/env"
 export OSMACHINE="ubuntu"
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
         # ...
+	print "Je suis dans linux-gnu" 
+	nerdfetch
 elif [[ "$OSTYPE" == "darwin"* ]]; then
         # Mac OSX
 	export OSMACHINE="apple"
@@ -228,7 +230,7 @@ fi
 . "$HOME/.asdf/asdf.sh"
 
 ## DIRENV necessaire pour l'outil ASDF
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 # source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
 # eval "$(starship init zsh)"
@@ -240,6 +242,7 @@ eval "$(zoxide init --cmd cd zsh)"
 # New tool to see the history, with crtl+r
 eval "$(atuin init zsh)"
 
+eval "$(task --completion zsh)"
 
 # !! Contents within this block are managed by juliaup !!
 
