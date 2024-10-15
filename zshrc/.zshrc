@@ -141,6 +141,8 @@ fi
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
 # export PATH="/usr/local/opt/sqlite/bin:$PATH"
 # export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"
 

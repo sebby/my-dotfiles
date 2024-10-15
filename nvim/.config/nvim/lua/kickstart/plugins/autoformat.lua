@@ -50,12 +50,6 @@ return {
           return
         end
 
-
-        -- juste pour les projets Drupal, car on se trouve dans le PSR2 et pas celui de Drupal et DrupalPractice.
-        if client.name == 'intelephense' then
-          -- print("je suis dans le intelephense")
-          return
-        end
         -- Create an autocmd that will run *before* we save the buffer.
         --  Run the formatting command for the LSP that has just attached.
         vim.api.nvim_create_autocmd('BufWritePre', {
