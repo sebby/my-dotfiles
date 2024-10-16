@@ -1,0 +1,4 @@
+{
+  "php_code_sniffer.enabled" :true,
+  "php_code_sniffer.bin" : "/home/sebastien-cunin/.config/composer/vendor/bin/phpcs"
+}
