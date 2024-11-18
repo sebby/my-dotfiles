@@ -13,8 +13,7 @@
 # include ./colors/melange-dark.conf
 # include ./colors/vscode-dark.conf
 # include ./colors/carbonfox.conf
-# include ./colors/dayfox.conf
-include ./colors/terafox.conf
+include ./colors/dayfox.conf
 # include ./colors/3024_Day.conf
 
 # include ./tokyonight/day.conf
@@ -51,6 +50,7 @@ confirm_os_window_close -1
 # include ${OSMACHINE}-settings.conf
 
 include ./ubuntu-settings.conf
+include ./fonts-firacode.conf
 
 # font_family FiraCode Nerd Font
 # symbol_map U+f101-U+f280 nonicon regular
