@@ -191,4 +191,4 @@ bar {
 
 
 # avoir le clavier US plutot que le clavier FR french
-# exec --no-startup-id setxkbmap us
+exec --no-startup-id setxkbmap us
