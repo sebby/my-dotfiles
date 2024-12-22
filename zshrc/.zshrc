@@ -120,6 +120,7 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
   export EDITOR='nvim'
 fi
+export NVIM_APPNAME='neovim-scn'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -255,7 +256,7 @@ export PATH="/opt/homebrew/opt/task@2/bin:$PATH"
 source <(fx --comp zsh)
 
 
-function yy() {
+function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
