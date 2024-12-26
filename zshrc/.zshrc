@@ -269,3 +269,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(~/.local/bin/mise activate zsh)"
+
+. "$HOME/.atuin/bin/env"
