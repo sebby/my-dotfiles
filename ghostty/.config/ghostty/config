@@ -1,8 +1,8 @@
 # Fichier de configuration pour ghostty
-
-# theme = dark:catppuccin-frappe,light:catppuccin-latte
+# TODO: ajouter gruvbox comme colorscheme
 cursor-color = #00FF00
-font-family="JetBrains Mono"
-adjust-cell-height = "20%"
+# font-family="JetBrains Mono"
+font-family="Berkeley Mono"
+adjust-cell-height = "35%"
 background-opacity = 0.8
 background-blur-radius = 20
