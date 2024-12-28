@@ -1,0 +1,8 @@
+# Fichier de configuration pour ghostty
+
+# theme = dark:catppuccin-frappe,light:catppuccin-latte
+cursor-color = #00FF00
+font-family="JetBrains Mono"
+adjust-cell-height = "20%"
+background-opacity = 0.8
+background-blur-radius = 20
