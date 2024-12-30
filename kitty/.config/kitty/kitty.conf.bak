@@ -13,7 +13,7 @@
 # include ./colors/melange-dark.conf
 # include ./colors/vscode-dark.conf
 # include ./colors/carbonfox.conf
-include ./colors/dayfox.conf
+# include ./colors/dayfox.conf
 # include ./colors/terafox.conf
 # include ./colors/nightfox.conf
 # include ./colors/3024_Day.conf
@@ -23,7 +23,8 @@ include ./colors/dayfox.conf
 # include ./colors/Gruvbox-Dark-Soft.conf
 # include ./colors/gruvbox_dark.conf
 
-
+include ./Rosé Pine.conf
+# include ./Default.conf
 
 map ctrl+shift+p>n kitten hints --type=linenum --linenum-action=tab nvim +{line} {path}
 
@@ -69,7 +70,7 @@ cursor_trail_start_threshold 50
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="Victor Mono"
+font_family      family="Berkeley Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
