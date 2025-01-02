@@ -2,7 +2,10 @@
 # TODO: ajouter gruvbox comme colorscheme
 cursor-color = #00FF00
 # font-family="JetBrains Mono"
-font-family="Berkeley Mono"
+# font-family="Berkeley Mono"
+
+# font-family="FiraMono Nerd Font Mono"
+font-family="DankMono Nerd Font"
 adjust-cell-height = "35%"
 background-opacity = 0.8
 background-blur-radius = 20
