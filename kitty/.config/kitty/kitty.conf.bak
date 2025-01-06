@@ -1,8 +1,6 @@
 # BEGIN_KITTY_THEME
-# Broadcast
-# include current-theme.conf
-# include tokyonight/moon.conf
-# include tokyonight/moon.conf
+# Gruvbox Dark
+include current-theme.conf
 # END_KITTY_THEME
 # include ./colors/Catppuccin-Mocha.conf
 # include ./colors/Gruvbox-Dark.conf
@@ -22,8 +20,9 @@
 # include ./colors/dracula.conf
 # include ./colors/Gruvbox-Dark-Soft.conf
 # include ./colors/gruvbox_dark.conf
+include ./colors/Gruvbox-Dark.conf
 
-include ./Rosé Pine.conf
+# include ./Rosé Pine.conf
 # include ./Default.conf
 
 map ctrl+shift+p>n kitten hints --type=linenum --linenum-action=tab nvim +{line} {path}
@@ -70,7 +69,7 @@ cursor_trail_start_threshold 50
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="Berkeley Mono"
+font_family      family="Fira Code"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
