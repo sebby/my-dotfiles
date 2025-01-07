@@ -272,3 +272,5 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(~/.local/bin/mise activate zsh)"
 
 . "$HOME/.atuin/bin/env"
+
+
