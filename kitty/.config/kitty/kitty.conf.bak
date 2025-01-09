@@ -8,7 +8,7 @@ include current-theme.conf
 # include ./colors/kanagawa.conf
 # include ./colors/kanagawa-light.conf
 # include ./colors/melange-light.conf
-# include ./colors/melange-dark.conf
+include ./colors/melange-dark.conf
 # include ./colors/vscode-dark.conf
 # include ./colors/carbonfox.conf
 # include ./colors/dayfox.conf
@@ -20,7 +20,7 @@ include current-theme.conf
 # include ./colors/dracula.conf
 # include ./colors/Gruvbox-Dark-Soft.conf
 # include ./colors/gruvbox_dark.conf
-include ./colors/Gruvbox-Dark.conf
+# include ./colors/Gruvbox-Dark.conf
 
 # include ./Rosé Pine.conf
 # include ./Default.conf
@@ -39,8 +39,6 @@ enabled_layouts tall:bias=50;full_size=1;mirrored=false
 cursor #00FF00
 font_size 12
 adjust_line_height 135%
-# symbol_map U+f101-U+f280 nonicon regular
-# symbol_map U+279c nonicon regular
 
 # >= .= <><= ===
 # >= .= <><= ===
@@ -53,13 +51,6 @@ confirm_os_window_close -1
 
 # include ./ubuntu-settings.conf
 
-# font_family FiraCode Nerd Font
-# symbol_map U+f101-U+f280 nonicon regular
-
-## voir le rendu de ce caractere (double chevron avec Fira code Nerd Fonts) dans le terminal
-#  echo '\uF101'
-# symbol_map U+f000-U+f2ff Nonicons Regular
-
 tab_bar_edge top
 # font_family Victor Mono
 
@@ -69,7 +60,7 @@ cursor_trail_start_threshold 50
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="Dank Mono"
+font_family      family="CaskaydiaCove Nerd Font Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
