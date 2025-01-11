@@ -2,7 +2,7 @@
 # TODO: ajouter gruvbox comme colorscheme
 cursor-color = #00FF00
 # font-family="JetBrains Mono"
-theme = dark:"Kanagawa Dragon",light:"Kanagawa Wave"
+theme=dark:"Kanagawa Dragon",light:"Kanagawa Wave"
 font-family="Berkeley Mono"
  # font-family = "Victor Mono"
 
