@@ -4,22 +4,39 @@
 [init]
 	defaultBranch = main
 [core]
-	; editor = nvim
 	editor = NVIM_APPNAME="neovim-scn" nvim
-	; pager = delta
+	pager = delta 
+
+
+; delta --show-syntax-themes
+; syntax theme =>
+; 1337
 
 [interactive]
 	diffFilter = delta --color-only
 
-; [delta]
-; 	theme = base16
-; 	side-by-side=true
-; 	navigate = true
-; 	features= true-color
 	
-[delta "features"]
-	syntax-highlighting = true 
-
 # Add the alias
 [alias]
   sort-branches-by-date = !git for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)' refs/heads/
+[diff]
+	show = delta --line-numbers
+
+[delta]
+	dark = true
+	features = side-by-side line-numbers decorations
+	syntax-theme = Dracula
+	plus-style = syntax "#003800"
+	minus-style = syntax "#3f0001"
+
+[delta "decorations"]
+	commit-decoration-style =  orange box ul
+	file-style = orange ul
+	file-decoration-style = none
+	hunk-header-decoration-style = cyan box ul
+
+[delta "line-numbers"]
+	line-numbers-left-style = cyan
+	line-numbers-right-style = cyan
+	line-numbers-minus-style = 124
+	line-numbers-plus-style = 28
