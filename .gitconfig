@@ -5,7 +5,7 @@
 	defaultBranch = main
 [core]
 	editor = NVIM_APPNAME="neovim-scn" nvim
-	pager = delta 
+	; pager = delta 
 
 
 ; delta --show-syntax-themes
@@ -24,16 +24,16 @@
 
 [delta]
 	dark = true
-	features = side-by-side line-numbers decorations
-	syntax-theme = Dracula
+	features = line-numbers decorations
+	syntax-theme = 1337
 	plus-style = syntax "#003800"
 	minus-style = syntax "#3f0001"
 
 [delta "decorations"]
-	commit-decoration-style =  orange box ul
+	commit-decoration-style = orange box 
 	file-style = orange ul
 	file-decoration-style = none
-	hunk-header-decoration-style = cyan box ul
+	hunk-header-decoration-style = cyan ul 
 
 [delta "line-numbers"]
 	line-numbers-left-style = cyan
