@@ -6,6 +6,13 @@
 [core]
 	; editor = nvim
 	editor = NVIM_APPNAME="neovim-scn" nvim
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	dark = true
 
 # Add the alias
 [alias]
