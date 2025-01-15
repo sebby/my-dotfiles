@@ -13,6 +13,7 @@
 [delta]
 	navigate = true
 	dark = true
+	side-by-side=true
 
 # Add the alias
 [alias]
