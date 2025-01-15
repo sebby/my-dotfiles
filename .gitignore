@@ -10,3 +10,4 @@ nvim/.config/nvim/spell
 ## Fiiles for GEANY>
 geany/.config/geany/session.conf
 geany/.config/geany/geany_socket*
+lazygit/.config/lazygit/state.yml
