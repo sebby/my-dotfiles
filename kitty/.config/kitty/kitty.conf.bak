@@ -1,6 +1,6 @@
 # BEGIN_KITTY_THEME
 # Gruvbox Dark
-include current-theme.conf
+# include current-theme.conf
 # END_KITTY_THEME
 # include ./colors/Catppuccin-Mocha.conf
 # include ./colors/Gruvbox-Dark.conf
@@ -8,7 +8,7 @@ include current-theme.conf
 # include ./colors/kanagawa.conf
 # include ./colors/kanagawa-light.conf
 # include ./colors/melange-light.conf
-include ./colors/melange-dark.conf
+# include ./colors/melange-dark.conf
 # include ./colors/vscode-dark.conf
 # include ./colors/carbonfox.conf
 # include ./colors/dayfox.conf
@@ -23,7 +23,7 @@ include ./colors/melange-dark.conf
 # include ./colors/Gruvbox-Dark.conf
 
 # include ./Rosé Pine.conf
-# include ./Default.conf
+include ./Default.conf
 
 map ctrl+shift+p>n kitten hints --type=linenum --linenum-action=tab nvim +{line} {path}
 
@@ -37,8 +37,17 @@ enabled_layouts tall:bias=50;full_size=1;mirrored=false
 # enabled_layouts fat:bias=50;full_size=1;mirrored=false
 # Override cursor color always GREEN
 cursor #00FF00
-font_size 12
-adjust_line_height 135%
+# font_size 12
+# adjust_line_height 135%
+
+
+
+
+font_size 18.0
+# font_family Monolisa Nerd Font
+# font_family 	family = "Comic Code Ligatures"
+# font_family FiraCode Nerd Font Mono
+# font_family JetBrainsMono Nerd Font Mono
 
 # >= .= <><= ===
 # >= .= <><= ===
@@ -60,7 +69,7 @@ cursor_trail_start_threshold 50
 
 
 # BEGIN_KITTY_FONTS
-font_family      family="CaskaydiaCove Nerd Font Mono"
+font_family      family="MonoLisa Nerd Font Mono"
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
