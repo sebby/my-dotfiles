@@ -4,13 +4,14 @@ cursor-color = #00FF00
 # font-family="JetBrains Mono"
 theme=dark:"Kanagawa Dragon",light:"Kanagawa Wave"
 theme="Brogrammer"
-font-family="Berkeley Mono"
+# font-family="Berkeley Mono"
  # font-family = "Victor Mono"
 
 # font-family="FiraMono Nerd Font"
 # font-family="DankMono Nerd Font"
 # font-family="Iosevka Term"
-adjust-cell-height = "35%"
+font-family="Comic Code Ligatures"
+adjust-cell-height = "50%"
 # adjust-cell-width = "90%"
 background-opacity = 0.8
 background-blur-radius = 20
