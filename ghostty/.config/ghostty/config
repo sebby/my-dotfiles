@@ -7,6 +7,8 @@ theme="Brogrammer"
 font-family="Berkeley Mono"
  # font-family = "Victor Mono"
 
+
+font-size = 18
 # font-family="FiraCode"
 # font-family="DankMono Nerd Font"
 # font-family="Iosevka Term"
