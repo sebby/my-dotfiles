@@ -3,7 +3,7 @@
 
 Utilisation d'un docker
 
-- [ ] il fait avoir le repo firacode
+- [ ] il fait avoir le repo #firacode
 - [ ] puis lancer le script de build
 - [ ] attendre 15 minutes
 - [ ] copier les polices géneres (voir le dossier distr) dans le dossier FONTS de l'OS
